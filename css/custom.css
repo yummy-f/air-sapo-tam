@@ -1,9 +1,142 @@
+/* FLOW */
+h1, h2, p{
+  margin: 0px;
+}
+
+.flow {
+  background-color: #0C0C0C;
+  color: #FFFFFF;
+  height: 757px;
+}
+
+.flow h1 {
+  text-align: center;
+  padding: 94.36px 0 19px;
+  font: normal normal bold 28px "Noto Sans CJK JP";
+  letter-spacing: 8.4px;
+}
+
+.flow h2 {
+  text-align: center;
+  margin-bottom: 103px;
+  font: normal normal normal 22px "Noto Sans CJK JP"!important;
+  letter-spacing: 4.4px;
+}
+
+.flow_icon_list {
+  display: flex;
+}
+
+.flow_icon {
+  width: 280px;
+}
+
+.flow_icon_number{
+  font: normal normal normal 30px "Ten Mincho";
+  letter-spacing: 1.5px;
+  color: #FF9494;
+  margin-left: 60px;
+  z-index: 10;
+  position: relative;
+}
+
+.icon_box {
+  width: 125px;
+  height: 105px;
+  background-color: #D6D6D6;
+  position: relative;
+  top: -20px;
+  left: 90px;
+  z-index: 5;
+}
+
+.icon_box p {
+  font: normal normal bold 18px "Noto Sans CJK JP";
+  letter-spacing: 3.6px;
+  color: #2E2E2E;
+  padding-top: 38px;
+}
+
+.flow_icon p {
+  text-align: center;
+}
+
+.flow_constract {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font: normal normal bold 18px "Noto Sans CJK JP";
+  letter-spacing: 3.6px;
+}
+
+.flow_detail {
+  font: normal normal normal 14px/32px "Noto Sans CJK JP";
+}
+
+.more_button {
+  width: 99px;
+  height: 33px;
+  margin: 52px auto 88.64px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px #0000001A;
+}
+
+.more_button a {
+  text-align: center;
+  font: normal normal bold 16px "Noto Sans CJK JP";
+  letter-spacing: 0.8px;
+  color: #232323;
+  margin: 8px 25px 5px 26px;
+  white-space: nowrap;
+}
+
 /* フッター */
-.copy_write {
-  font-family: '游ゴシック';
-  font-size: 15px;
-  font-weight: bold;
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+footer {
+  font: normal normal bold 15px "Yu Gothic";
   color: #4A4A4A;
+  white-space: nowrap;
+}
+
+.footer_link {
+  margin-top: 78.36px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_logo {
+  margin-right: 310.69px;
+  height: 47.29px;
+}
+
+.footer_link a {
+  color: #4A4A4A;
+}
+
+.footer_menu1 {
+  margin-right: 92px;
+}
+
+.footer_menu1 li{
+  margin-bottom: 46px;
+}
+
+.footer_menu2 li {
+  margin-bottom:30px;
+}
+
+.footer_menu2_li1 {
+  margin-bottom: 46px!important;
+}
+
+.copy_write {
   text-align: center;
   margin: 35.5px 0 37.5px;
 }
