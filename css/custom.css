@@ -1,5 +1,75 @@
+/* INTERVIEW */
+.interview_box {
+  height: 941.64px;
+}
+
+.interview_box h1 {
+  padding-top: 121px;
+  margin-bottom: 19px;
+  text-align: center;
+  font: normal normal bold 28px "Noto Sans CJK JP";
+  letter-spacing: 8.4px;
+  color: #FF5555;
+}
+
+.interview_box h2 {
+  margin-bottom: 98px;
+  text-align: center;
+  font: normal normal bold 22px "Noto Sans CJK JP";
+  letter-spacing: 4.4px;
+  color: #2E2E2E;
+}
+
+.interview_picture {
+  margin: auto;
+  width: 980.5px;
+}
+
+.interview_picture img {
+  position: relative;
+  height: 354px;
+}
+
+.interview_right_box {
+  position: relative;
+  width: 521.69px;
+  height: 420px;
+  top: -260px;
+  left: 450px;
+  background-color: #E7E7E7;
+  opacity: 0.9;
+}
+
+.interview_right_box h3 {
+  padding-top: 47.36px;
+  padding-bottom: 41px;
+  padding-left: 63.19px;
+  font: normal normal bold 22px "Noto Sans CJK JP";
+  letter-spacing: 4.4px;
+  color: #2E2E2E;
+}
+
+.interview_right_box p {
+  margin-left: 63.19px;
+  margin-bottom: 53px;
+  width: 412px;
+  text-align: left;
+  font: normal normal bold 16px/32px Noto Sans CJK JP;
+  letter-spacing: 3.2px;
+  color: #2E2E2E;
+}
+
+.interview_right_box a {
+  margin-left: 63.19px;
+  padding: 4px 25px 5px 26px;
+  background-color: #3D3D3D;
+  font: normal normal normal 16px "Noto Sans CJK JP";
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+}
+
 /* FLOW */
-h1, h2, p{
+h1, h2, h3, p{
   margin: 0px;
 }
 
@@ -25,10 +95,11 @@ h1, h2, p{
 
 .flow_icon_list {
   display: flex;
+  justify-content: center;
 }
 
 .flow_icon {
-  width: 280px;
+  width: 260px;
 }
 
 .flow_icon_number{
@@ -76,16 +147,15 @@ h1, h2, p{
   width: 99px;
   height: 33px;
   margin: 52px auto 88.64px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 10px 20px #0000001A;
 }
 
 .more_button a {
-  text-align: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px #0000001A;
   font: normal normal bold 16px "Noto Sans CJK JP";
   letter-spacing: 0.8px;
   color: #232323;
-  margin: 8px 25px 5px 26px;
+  padding: 8px 25px 5px 26px;
   white-space: nowrap;
 }
 

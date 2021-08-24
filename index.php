@@ -7,6 +7,22 @@ Template Name: トップページ
 
 <?php get_header(); ?>
 
+<!------------------------------- INTERVIEW -------------------------------------->
+<div class="interview_box">
+  <h1>INTERVIEW</h1>
+  <h2>インタビュー</h2>
+  <div class="interview_picture">
+    <img src="<?php echo get_template_directory_uri(); ?>/image/YamadaTaro.png" alt="">
+    <div class="interview_right_box">
+      <h3>山田太郎様</h3>
+      <p>最初の4所帯のアパートの客付けや管理も安定しお任せしておりました。その中で今年に入って、別の物件の部屋が3つ空いてしまったので、竹島さんに管理の相談をしてお任せすることにしました。</p>
+      <a href="">MORE</a>
+    </div>
+  </div>
+</div>
+
+
+
 
 <!------------------------------- FLOW -------------------------------------->
 <div class="flow">
