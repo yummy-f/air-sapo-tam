@@ -2,6 +2,21 @@
  * ========================================================================== */
 
 
+/* custom */
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
 /**
  * Add border box sizing in all browsers (opinionated).
  */

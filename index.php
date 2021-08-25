@@ -7,6 +7,60 @@ Template Name: トップページ
 
 <?php get_header(); ?>
 
+<!------------------------------- onii -------------------------------------->
+
+
+
+  <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
+
+  <div class="top_white">
+    <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-491502636-2048x204_bm@2x.png" alt="">
+    <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
+    <button disabled="disabled">click</button>
+  </div>
+  <div class="Strengths">
+    <div class="strengths_main">
+      <h2>STRENGTHS</h2>
+      <h3>強み</h3>
+    </div>
+
+    <div class="strength_pic">
+      <ul class="strength_pic_list1">
+        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+          <p>賃料の適正化、募集条件の検証オーナー様へ適正な賃料をご提案
+          </p>
+        </li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+          <p>帝国データバンク発行の企業評価点で66点を獲得
+          </p>
+        </li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+          <p>12,000人の仲介営業マンとのパイプライン
+          </p>
+        </li>
+      </ul>
+
+      <ul class="strength_pic_list2">
+        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+          <p>空室ゼロ時代。brテナント維持の為に募集の仕組みを変更することが大事
+          </p>
+        </li>
+        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+          <p>顧客（オーナー・入居者・仲介業者 ）目線で対応します
+          </p>
+        </li>
+      </ul>
+      <button>MORE</button>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
 <!------------------------------- INTERVIEW -------------------------------------->
 <div class="interview_box">
   <h1>INTERVIEW</h1>

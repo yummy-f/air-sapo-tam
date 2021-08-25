@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
 
     <title>Airsapo TAM</title>
-    
+
     <?php wp_head(); ?>
 
 </head>
@@ -25,6 +25,43 @@
 
 <body>
     <!------------------------------- ヘッダー -------------------------------------->
-    <header>
-        ヘッダー
-    </header>
+    <div class="toppage">
+        <img class="header_back" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-1127715669-2048x20@2x.png" alt="">
+        <ul class="toppage_header">
+            <li class="logo"><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></li>
+            <li class="header_menu">
+                <a href="">
+                    <p>事業内容</p>
+                </a>
+            </li>
+            <li class="header_menu">
+                <a href="">
+                    <p>インタビュー</p>
+                </a>
+            </li>
+            <li class="header_menu">
+                <a href="">
+                    <p>管理事例</p>
+                </a>
+            </li>
+            <li class="header_menu">
+                <a href="">
+                    <p>TAM日記</p>
+                </a>
+            </li>
+            <li class="header_menu">
+                <a href="">
+                    <p>会社概要</p>
+                </a>
+            </li>
+            <li class="header_menu">
+                <a href="">
+                    <p>お問い合わせ無料</p>
+                </a>
+            </li>
+            <li class="header_menu">
+                <a href="">
+                    <p>03-6453-6656（無料）</p>
+                </a>
+            </li>
+        </ul>
