@@ -15,7 +15,36 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'pfx5euy',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
     <title>Airsapo TAM</title>
 
     <?php wp_head(); ?>
@@ -25,43 +54,43 @@
 
 <body>
     <!------------------------------- ヘッダー -------------------------------------->
-    <div class="toppage">
-        <img class="header_back" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-1127715669-2048x20@2x.png" alt="">
-        <ul class="toppage_header">
-            <li class="logo"><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></li>
-            <li class="header_menu">
+    <header>
+        <div class="toppage_header">
+            <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></div>
+            <div class="header_menu">
                 <a href="">
                     <p>事業内容</p>
                 </a>
-            </li>
-            <li class="header_menu">
+            </div>
+            <div class="header_menu">
                 <a href="">
                     <p>インタビュー</p>
                 </a>
-            </li>
-            <li class="header_menu">
+            </div>
+            <div class="header_menu">
                 <a href="">
                     <p>管理事例</p>
                 </a>
-            </li>
-            <li class="header_menu">
+            </div>
+            <div class="header_menu">
                 <a href="">
                     <p>TAM日記</p>
                 </a>
-            </li>
-            <li class="header_menu">
+            </div>
+            <div class="header_menu">
                 <a href="">
                     <p>会社概要</p>
                 </a>
-            </li>
-            <li class="header_menu">
+            </div>
+            <div class="header_menu">
                 <a href="">
                     <p>お問い合わせ無料</p>
                 </a>
-            </li>
-            <li class="header_menu">
+            </div>
+            <div class="header_menu">
                 <a href="">
                     <p>03-6453-6656（無料）</p>
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
+    </header>

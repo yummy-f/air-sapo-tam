@@ -8,8 +8,8 @@ Template Name: トップページ
 <?php get_header(); ?>
 
 <!------------------------------- onii -------------------------------------->
-
-
+<div class="main">
+  <img class="header_back" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-1127715669-2048x20@2x.png" alt="">
 
   <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
 
@@ -23,40 +23,37 @@ Template Name: トップページ
       <h2>STRENGTHS</h2>
       <h3>強み</h3>
     </div>
+  </div>
 
-    <div class="strength_pic">
-      <ul class="strength_pic_list1">
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-          <p>賃料の適正化、募集条件の検証オーナー様へ適正な賃料をご提案
-          </p>
-        </li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-          <p>帝国データバンク発行の企業評価点で66点を獲得
-          </p>
-        </li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-          <p>12,000人の仲介営業マンとのパイプライン
-          </p>
-        </li>
-      </ul>
+  <div class="strength_pic">
+    <ul class="strength_pic_list1">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+        <p>賃料の適正化、募集条件の検証オーナー様へ適正な賃料をご提案
+        </p>
+      </li>
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+        <p>帝国データバンク発行の企業評価点で66点を獲得
+        </p>
+      </li>
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+        <p>12,000人の仲介営業マンとのパイプライン
+        </p>
+      </li>
+    </ul>
 
-      <ul class="strength_pic_list2">
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-          <p>空室ゼロ時代。brテナント維持の為に募集の仕組みを変更することが大事
-          </p>
-        </li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-          <p>顧客（オーナー・入居者・仲介業者 ）目線で対応します
-          </p>
-        </li>
-      </ul>
-      <button>MORE</button>
-
-    </div>
-
+    <ul class="strength_pic_list2">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+        <p>空室ゼロ時代。<br>テナント維持の為に募集の仕組みを変更することが大事
+        </p>
+      </li>
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+        <p>顧客（オーナー・入居者・仲介業者 ）目線で対応します
+        </p>
+      </li>
+    </ul>
+    <a class="more_button">MORE</a>
   </div>
 </div>
-
 
 
 
