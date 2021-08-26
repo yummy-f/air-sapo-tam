@@ -56,7 +56,7 @@
     <!------------------------------- ヘッダー -------------------------------------->
     <header>
         <div class="toppage_header">
-            <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></div>
+            <a class="logo" href=""><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></a>
             <div class="header_menu">
                 <a href="">
                     <p>事業内容</p>

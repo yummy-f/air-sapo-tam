@@ -7,28 +7,32 @@ Template Name: トップページ
 
 <?php get_header(); ?>
 
-<!------------------------------- onii -------------------------------------->
+<!------------------------------- 見出し -------------------------------------->
 <div class="main">
   <img class="header_back" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-1127715669-2048x20@2x.png" alt="">
 
   <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
 
   <div class="top_white">
-    <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-491502636-2048x204_bm@2x.png" alt="">
+    <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
-    <button disabled="disabled">click</button>
+    <a href="">CLICK</a>
   </div>
-  <div class="Strengths">
-    <div class="strengths_main">
-      <h2>STRENGTHS</h2>
-      <h3>強み</h3>
-    </div>
+</div>
+
+<!------------------------------- 強み -------------------------------------->
+
+
+<div class="Strengths">
+  <div class="strengths_main">
+    <h2>STRENGTHS</h2>
+    <h3>強み</h3>
   </div>
 
   <div class="strength_pic">
     <ul class="strength_pic_list1">
       <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-        <p>賃料の適正化、募集条件の検証オーナー様へ適正な賃料をご提案
+        <p>賃料の適正化、募集条件の検証<br>オーナー様へ適正な賃料をご提案
         </p>
       </li>
       <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
@@ -36,7 +40,7 @@ Template Name: トップページ
         </p>
       </li>
       <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
-        <p>12,000人の仲介営業マンとのパイプライン
+        <p>12,000人の仲介営業マンとの<br>パイプライン
         </p>
       </li>
     </ul>
@@ -51,11 +55,9 @@ Template Name: トップページ
         </p>
       </li>
     </ul>
-    <a class="more_button">MORE</a>
+    <a class="strength_more">MORE</a>
   </div>
 </div>
-
-
 
 
 <!------------------------------- INTERVIEW -------------------------------------->
@@ -71,8 +73,6 @@ Template Name: トップページ
     </div>
   </div>
 </div>
-
-
 
 
 <!------------------------------- FLOW -------------------------------------->
@@ -124,6 +124,7 @@ Template Name: トップページ
   <div class="more_button">
     <a href="">MORE</a>
   </div>
+  <a href="" class="top_back_arrow">&#8743;</a>
 </div>
 
 
