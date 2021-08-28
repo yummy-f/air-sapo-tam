@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/custom.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsy2knc.css">
 
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
@@ -54,7 +57,7 @@
 
 <body>
     <!------------------------------- ヘッダー -------------------------------------->
-    <header>
+    <!-- <header>
         <div class="toppage_header">
             <a class="logo" href=""><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></a>
             <div class="header_menu">
@@ -93,4 +96,42 @@
                 </a>
             </div>
         </div>
+    </header> -->
+
+    <header>
+        <div class="head">
+            <div class="header_logo"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></a></div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="globalMenuSp">
+                <ul>
+                    <li><a href="#">事業内容</a></li>
+                    <li><a href="#">インタビュー</a></li>
+                    <li><a href="#">管理事例</a></li>
+                    <li><a href="#">TAM日記</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">お問い合わせ無料</a></li>
+                    <li><a href="#">03-6453-6656（無料）</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <!-------------------------------- jquery ----------------------------------->
+
+    <script>
+        $(function() {
+            $('.hamburger').click(function() {
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('.globalMenuSp').addClass('active');
+                } else {
+                    $('.globalMenuSp').removeClass('active');
+                }
+            });
+        });
+    </script>
