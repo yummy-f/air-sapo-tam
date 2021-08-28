@@ -396,6 +396,10 @@ header {
 }
 
 /*------------------------------------ フッター --------------------------------------*/
+hr {
+  border: 1px solid #707070;
+}
+
 
 footer {
   font: normal normal bold 15px "Yu Gothic";
@@ -440,3 +444,48 @@ footer {
   font: normal normal bold 15px Yu Gothic;
   color: #4A4A4A;
 }
+
+
+
+
+
+
+
+
+
+/*------------------------------------ TAM日記 --------------------------------------*/
+.tam_diary {
+  height: 290px;
+  background-image: url("../image/background_other.png");
+  background-size:cover;
+}
+
+.tam_diary h1 {
+  font: normal normal bold 28px Noto Sans CJK JP;
+  letter-spacing: 8.4px;
+  color: #FF5555;
+  text-align: center;
+  padding-top: 128px;
+}
+
+.tam_diary h2 {
+  font: normal normal bold 22px Noto Sans CJK JP;
+  letter-spacing: 4.4px;
+  color: #2E2E2E;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.diary_list {
+  height: 35px;
+  background-color: #F8F8F8;
+}
+
+.diary_list p {
+  padding-top: 8px;
+  margin-left: 10%;
+  font: normal normal bold 14px Yu Gothic;
+}
+
+
+/*------------------------------------ 日記一覧 --------------------------------------*/

@@ -73,7 +73,7 @@
                 </a>
             </div>
             <div class="header_menu">
-                <a href="">
+                <a href="tam_diary">
                     <p>TAM日記</p>
                 </a>
             </div>
