@@ -13,6 +13,7 @@ Template Name: トップページ
   <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
 
   <div class="top_white">
+    <img class="top_white_back" src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
     <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
     <a href="">CLICK</a>
