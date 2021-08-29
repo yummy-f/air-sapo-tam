@@ -19,7 +19,15 @@ header {
 
 .header_logo {
   width: 242.81px;
-  margin-right: 87.6px;
+  margin-right: 67.6px;
+  margin-left: 20px;
+}
+
+@media (min-width:1000px) {
+  .header_logo {
+    width: 242.81px;
+    margin-right: 87.6px;
+  }
 }
 
 .header_logo img {
@@ -479,6 +487,7 @@ nav.globalMenuSp.active {
 .strength_pic_list2 li {
   width: 306px;
   margin-bottom: 7%;
+  margin: 0 auto;
 }
 
 @media (min-width:1000px) {
@@ -736,6 +745,13 @@ nav.globalMenuSp.active {
 .flow_icon {
   width: 260px;
   margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+@media (min-width:1000px) {
+  .flow_icon {
+    padding-bottom: 0;
+  }
 }
 
 .flow_icon_number {
@@ -785,10 +801,18 @@ nav.globalMenuSp.active {
 }
 
 .flow_constract {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 17px;
+  margin-bottom: 18px;
   font: normal normal bold 18px "Noto Sans CJK JP";
   letter-spacing: 3.6px;
+}
+
+@media (min-width:1000px) {
+  .flow_constract {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    
+  }
 }
 
 .flow_detail {
@@ -839,8 +863,14 @@ footer {
 }
 
 .footer_logo {
-  margin-right: 310.69px;
+  margin-right: 217.5px;
   height: 47.29px;
+}
+
+@media (min-width:1000px) {
+  .footer_logo {
+    margin-right: 310.69px;
+  }
 }
 
 .footer_link a {
@@ -848,12 +878,19 @@ footer {
 }
 
 .footer_menu1 {
-  margin-right: 92px;
+  margin-right: 64.4px;
+}
+
+@media (min-width:1000px) {
+  .footer_menu1 {
+    margin-right: 92px;
+  }
 }
 
 .footer_menu1 li {
   margin-bottom: 46px;
 }
+
 
 .footer_menu2 li {
   margin-bottom: 30px;
