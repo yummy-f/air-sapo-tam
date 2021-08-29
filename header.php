@@ -57,47 +57,6 @@
 
 <body>
     <!------------------------------- ヘッダー -------------------------------------->
-    <!-- <header>
-        <div class="toppage_header">
-            <a class="logo" href=""><img src="<?php echo get_template_directory_uri(); ?>/image/グループ 134.png" alt=""></a>
-            <div class="header_menu">
-                <a href="">
-                    <p>事業内容</p>
-                </a>
-            </div>
-            <div class="header_menu">
-                <a href="">
-                    <p>インタビュー</p>
-                </a>
-            </div>
-            <div class="header_menu">
-                <a href="">
-                    <p>管理事例</p>
-                </a>
-            </div>
-            <div class="header_menu">
-                <a href="tam_diary">
-                    <p>TAM日記</p>
-                </a>
-            </div>
-            <div class="header_menu">
-                <a href="">
-                    <p>会社概要</p>
-                </a>
-            </div>
-            <div class="header_menu">
-                <a href="">
-                    <p>お問い合わせ無料</p>
-                </a>
-            </div>
-            <div class="header_menu">
-                <a href="">
-                    <p>03-6453-6656（無料）</p>
-                </a>
-            </div>
-        </div>
-    </header> -->
-
     <header>
         <div class="head">
             <div class="header_logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a></div>
