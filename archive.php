@@ -9,12 +9,12 @@ Template Name: TAM日記
 
 
 <!-------------------------------- TAM DAIRY ----------------------------------->
-<div class="tam_diary">
+<div class="background_other">
   <h1>TAM DIARY</h1>
   <h2>TAM日記</h2>
 </div>
 
-<div class="diary_list">
+<div class="subtitle">
   <p>HOME TAM日記一覧</p>
 </div>
 

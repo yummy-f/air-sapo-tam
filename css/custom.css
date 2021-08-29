@@ -1,4 +1,4 @@
-/*-------------------------------------- ヘッダー --------------------------------------*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ヘッダー ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 header {
     width: 100%;
@@ -25,7 +25,6 @@ header {
 .header_logo img {
     width: 100%;
 }
-
 
 /*　ハンバーガーボタン　*/
 
@@ -72,7 +71,6 @@ header {
     top: 30px;
 }
 
-
 /* ナビ開いてる時のボタン */
 
 .hamburger.active {
@@ -92,8 +90,7 @@ header {
     width: 0px;
 }
 
-.hamburger.active span:nth-child(1),
-.hamburger.active span:nth-child(3) {
+.hamburger.active span:nth-child(1), .hamburger.active span:nth-child(3) {
     background: rgb(83, 83, 83);
     -webkit-transition-delay: 0.3s;
     -o-transition-delay: 0.3s;
@@ -185,7 +182,6 @@ nav.globalMenuSp ul li a {
     text-decoration: none;
 }
 
-
 /* このクラスを、jQueryで付与・削除する */
 
 nav.globalMenuSp.active {
@@ -193,8 +189,7 @@ nav.globalMenuSp.active {
     display: block;
 }
 
-
-/*------------------------------------ 見出し --------------------------------------*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ トップページ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 .main {
     position: relative;
@@ -236,7 +231,8 @@ nav.globalMenuSp.active {
     right: 0;
     margin: auto;
     width: 80.51%;
-    height: 275px;;
+    height: 275px;
+    ;
 }
 
 .top_white_universe {
@@ -288,7 +284,6 @@ nav.globalMenuSp.active {
     letter-spacing: 0.8px;
     white-space: nowrap;
 }
-
 
 /*------------------------------------ Strengths --------------------------------------*/
 
@@ -405,7 +400,6 @@ nav.globalMenuSp.active {
     white-space: nowrap;
 }
 
-
 /*------------------------------------ INTERVIEW --------------------------------------*/
 
 .interview_box {
@@ -476,7 +470,6 @@ nav.globalMenuSp.active {
     letter-spacing: 0.8px;
     color: #FFFFFF;
 }
-
 
 /*------------------------------------ FLOW --------------------------------------*/
 
@@ -575,12 +568,11 @@ nav.globalMenuSp.active {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ フッター ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
-/*------------------------------------ フッター --------------------------------------*/
 hr {
-  border: 1px solid #707070;
+    border: 1px solid #707070;
 }
-
 
 footer {
     font: normal normal bold 15px "Yu Gothic";
@@ -620,53 +612,87 @@ footer {
 }
 
 .copy_write {
-  text-align: center;
-  margin: 35.5px 0 37.5px;
-  font: normal normal bold 15px Yu Gothic;
-  color: #4A4A4A;
+    text-align: center;
+    margin: 35.5px 0 37.5px;
+    font: normal normal bold 15px Yu Gothic;
+    color: #4A4A4A;
 }
 
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ページ共通 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
-
-
-
-
-
-
-
-/*------------------------------------ TAM日記 --------------------------------------*/
-.tam_diary {
-  height: 290px;
-  background-image: url("../image/background_other.png");
-  background-size:cover;
+.background_other {
+    height: 290px;
+    background-image: url("../image/background_other.png");
+    background-size: cover;
 }
 
-.tam_diary h1 {
-  font: normal normal bold 28px Noto Sans CJK JP;
-  letter-spacing: 8.4px;
-  color: #FF5555;
-  text-align: center;
-  padding-top: 128px;
+.background_other h1 {
+    font: normal normal bold 28px Noto Sans CJK JP;
+    letter-spacing: 8.4px;
+    color: #FF5555;
+    text-align: center;
+    padding-top: 128px;
 }
 
-.tam_diary h2 {
-  font: normal normal bold 22px Noto Sans CJK JP;
-  letter-spacing: 4.4px;
-  color: #2E2E2E;
-  text-align: center;
-  margin-top: 19px;
+.background_other h2 {
+    font: normal normal bold 22px Noto Sans CJK JP;
+    letter-spacing: 4.4px;
+    color: #2E2E2E;
+    text-align: center;
+    margin-top: 19px;
 }
 
-.diary_list {
-  height: 35px;
-  background-color: #F8F8F8;
+.subtitle {
+    height: 35px;
+    background-color: #F8F8F8;
 }
 
-.diary_list p {
-  padding-top: 8px;
-  margin-left: 10%;
-  font: normal normal bold 14px Yu Gothic;
+.subtitle p {
+    padding-top: 8px;
+    margin-left: 10%;
+    font: normal normal bold 14px Yu Gothic;
 }
 
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ TAM日記 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 /*------------------------------------ 日記一覧 --------------------------------------*/
+
+/*  */
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 会社概要 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+.company_informatino{
+    margin-top: 97px;
+}
+
+.company_informatino ul {
+    margin: auto;
+    width: 978.93px;
+}
+
+.company_informatino hr {
+    border: 1px solid #E7E7E7;
+    width: 978.93px;
+}
+
+.company_informatino_row {
+    display: flex;
+    margin: 20px 0 19px;
+    position: relative;
+}
+
+.information_title {
+    font: normal normal bold 16px Noto Sans CJK JP;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+.information_details {
+    font: normal normal normal 16px Noto Sans CJK JP;
+    color: #2E2E2E;
+    position: relative;
+    left: 252px;
+}
+
+.information_details p {
+    margin-bottom: 3px;
+}

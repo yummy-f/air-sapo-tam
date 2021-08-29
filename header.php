@@ -100,7 +100,7 @@
 
     <header>
         <div class="head">
-            <div class="header_logo"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a></div>
+            <div class="header_logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a></div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -112,8 +112,8 @@
                     <li><a href="#">事業内容</a></li>
                     <li><a href="#">インタビュー</a></li>
                     <li><a href="#">管理事例</a></li>
-                    <li><a href="#">TAM日記</a></li>
-                    <li><a href="#">会社概要</a></li>
+                    <li><a href="tam_diary">TAM日記</a></li>
+                    <li><a href="company">会社概要</a></li>
                     <li><a href="#">お問い合わせ無料</a></li>
                     <li><a href="#">03-6453-6656（無料）</a></li>
                 </ul>
