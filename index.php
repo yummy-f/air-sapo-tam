@@ -4,33 +4,25 @@ Template Name: トップページ
 */
 ?>
 
+
 <?php get_header(); ?>
+
 
 <!------------------------------- 見出し -------------------------------------->
 <div class="main">
-  <img class="header_back" src="<?php echo get_template_directory_uri(); ?>/image/istockphoto-1127715669-2048x20@2x.png" alt="">
+  <img class="header_back" src="<?php echo get_template_directory_uri(); ?>/image/background_top.png" alt="">
 
   <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
 
   <div class="top_white">
-    <img class="top_white_back" src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+    <img class="top_white_back" src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
     <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
     <a href="">CLICK</a>
   </div>
 </div>
-<?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-    <section class="post-item">
-      <h2><?php the_title(); ?></h2>
-      <p><?php the_content(); ?></p>
-    </section>
-  <?php endwhile; ?>
-<?php else : ?>
-  <div class="error">
-    <p>お探しの記事は見つかりませんでした。</p>
-  </div>
-<?php endif; ?>
+
+
 <!------------------------------- 強み -------------------------------------->
 <div class="Strengths">
   <div class="strengths_main">
@@ -40,26 +32,26 @@ Template Name: トップページ
 
   <div class="strength_pic">
     <ul class="strength_pic_list1">
-      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
         <p>賃料の適正化、募集条件の検証<br>オーナー様へ適正な賃料をご提案
         </p>
       </li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
         <p>帝国データバンク発行の企業評価点で66点を獲得
         </p>
       </li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
         <p>12,000人の仲介営業マンとの<br>パイプライン
         </p>
       </li>
     </ul>
 
     <ul class="strength_pic_list2">
-      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
         <p>空室ゼロ時代。<br>テナント維持の為に募集の仕組みを変更することが大事
         </p>
       </li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/image/AdobeStock_307162388.png" alt="">
+      <li><img src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
         <p>顧客（オーナー・入居者・仲介業者 ）目線で対応します
         </p>
       </li>
