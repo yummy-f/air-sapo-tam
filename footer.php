@@ -1,7 +1,7 @@
 <!-------------------------------- フッター ----------------------------------->
 <footer>
   <div class="footer_link">
-    <img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/image/logo_black.png" alt="">
+    <a href="/"><img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/image/logo_black.png" alt=""></a>
     <ul class="footer_menu1">
       <li><a href="">HOME</a></li>
       <li><a href="">事業内容</a></li>

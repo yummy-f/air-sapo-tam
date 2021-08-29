@@ -125,7 +125,7 @@ Template Name: トップページ
   <div class="more_button">
     <a href="">MORE</a>
   </div>
-  <a href="" class="top_back_arrow">&#8743;</a>
+  <a href="" class="top_back_arrow"><img src="<?php echo get_template_directory_uri(); ?>/image/up_arrow.png" alt=""></a>
 </div>
 
 
