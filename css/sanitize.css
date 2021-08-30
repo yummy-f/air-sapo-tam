@@ -16,6 +16,7 @@ p, h1, h2, h3, ul, hr{
 li {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 /**

@@ -1,4 +1,4 @@
-/*-------------------------------------- ヘッダー --------------------------------------*/
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ヘッダー ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 header {
   width: 100%;
@@ -21,6 +21,11 @@ header {
   width: 242.81px;
   margin-right: 67.6px;
   margin-left: 20px;
+}
+
+.header_logo:hover {
+  opacity: 0.8;
+  transform: translateY(2px);
 }
 
 @media (min-width:1000px) {
@@ -280,6 +285,7 @@ nav.globalMenuSp.active {
   height: 239.8px;
   animation: anime1 1.4s ease 0s infinite normal;
   transform-origin: center;
+  box-shadow: 0px 10px 20px #0000001A;
 }
 
 @media (min-width:1000px) {
@@ -336,6 +342,7 @@ nav.globalMenuSp.active {
   font-size: 12px;
   letter-spacing: 0.8px;
   white-space: nowrap;
+  box-shadow: 0px 10px 20px #0000001A;
 }
 
 @media (min-width:1000px) {
@@ -344,8 +351,6 @@ nav.globalMenuSp.active {
     width: 99px;
     padding: 4px 25px 5px 26px;
     font-size: 16px;
-    letter-spacing: 0.8px;
-    white-space: nowrap;
   }
 }
 
@@ -402,7 +407,7 @@ nav.globalMenuSp.active {
 
 .strength_pic_list1 {
   display: flex;
-  width: 698px;
+  width: 662px;
   flex-wrap: wrap;
   padding-left: 0;
   left: 0;
@@ -460,7 +465,7 @@ nav.globalMenuSp.active {
 
 .strength_pic_list2 {
   display: flex;
-  width: 698px;
+  width: 662px;
   height: 363px;
   padding-left: 0;
   left: 0;
@@ -473,7 +478,7 @@ nav.globalMenuSp.active {
 @media (min-width:1000px) {
   .strength_pic_list2 {
     display: flex;
-    width: 698px;
+    width: 662px;
     height: 363px;
     padding-left: 0;
     left: 0;
@@ -517,16 +522,16 @@ nav.globalMenuSp.active {
 
 .strength_more {
   background-color: #3D3D3D;
-  width: 99px;
+  width: 103px;
   height: 33px;
-  padding: 6px 25px 5px 26px;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 16px;
+  padding: 5px 25px 5px 25px;
+  font: normal normal bold 16px Noto Sans CJK JP;
   color: #fff;
   margin: 52px auto 0;
   display: block;
   letter-spacing: 0.8px;
   white-space: nowrap;
+  box-shadow: 0px 10px 20px #0000001A;
 }
 
 /*------------------------------------ INTERVIEW --------------------------------------*/
@@ -646,7 +651,7 @@ nav.globalMenuSp.active {
   margin-bottom: 15px;
   width: 288.4px;
   text-align: left;
-  font: normal normal bold 12px/32px Noto Sans CJK JP;
+  font: normal normal normal 12px/32px Noto Sans CJK JP;
   letter-spacing: 2.3px;
   color: #2E2E2E;
 }
@@ -656,28 +661,25 @@ nav.globalMenuSp.active {
     margin-left: 63.19px;
     margin-bottom: 53px;
     width: 412px;
-    text-align: left;
-    font: normal normal bold 16px/32px Noto Sans CJK JP;
+    font: normal normal normal 16px/32px Noto Sans CJK JP;
     letter-spacing: 3.2px;
   }
 }
 
 .interview_right_box a {
   margin-left: 44.24px;
-  padding: 4px 25px 5px 26px;
+  padding: 6px 25px 6px 26px;
   background-color: #3D3D3D;
-  font: normal normal normal 12px "Noto Sans CJK JP";
+  font: normal normal bold 12px "Noto Sans CJK JP";
   letter-spacing: 0.8px;
   color: #FFFFFF;
+  box-shadow: 0px 10px 20px #0000001A;
 }
 
 @media (min-width:1000px) {
   .interview_right_box a {
     margin-left: 63.19px;
-    padding: 4px 25px 5px 26px;
-    background-color: #3D3D3D;
-    font: normal normal normal 16px "Noto Sans CJK JP";
-    letter-spacing: 0.8px;
+    font: normal normal bold 16px "Noto Sans CJK JP";
   }
 }
 
@@ -746,6 +748,7 @@ nav.globalMenuSp.active {
   width: 260px;
   margin: 0 auto;
   padding-bottom: 30px;
+  position: relative;
 }
 
 @media (min-width:1000px) {
@@ -758,17 +761,9 @@ nav.globalMenuSp.active {
   font: normal normal normal 30px Ten Mincho, serif;
   letter-spacing: 1.5px;
   color: #FF9494;
-  margin-left: 50px;
+  margin-left: 40px;
   z-index: 10;
   position: relative;
-}
-
-@media (min-width:1000px) {
-  .flow_icon_number {
-    margin-left: 60px;
-    z-index: 10;
-    position: relative;
-  }
 }
 
 .icon_box {
@@ -777,14 +772,15 @@ nav.globalMenuSp.active {
   background-color: #D6D6D6;
   position: relative;
   top: -17px;
-  left: 76px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
   z-index: 5;
 }
 
 @media (min-width:1000px) {
   .icon_box {
     top: -17px;
-    left: 86px;
     z-index: 5;
   }
 }
@@ -811,7 +807,6 @@ nav.globalMenuSp.active {
   .flow_constract {
     margin-top: 24px;
     margin-bottom: 25px;
-    
   }
 }
 
@@ -835,29 +830,23 @@ nav.globalMenuSp.active {
   white-space: nowrap;
 }
 
-.top_back_arrow {
-  position: relative;
-  top: -12px;
-  left: 1040.5px;
-  padding: 15px 17px 23px 15px;
-  box-shadow: 0px 10px 20px #0000001A;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-}
-
-/*------------------------------------ フッター --------------------------------------*/
-
-hr {
-  border: 1px solid #707070;
-}
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ フッター ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 footer {
+  position: relative;
   font: normal normal bold 15px "Yu Gothic";
   color: #4A4A4A;
   white-space: nowrap;
 }
 
+.top_back_arrow {
+  position: absolute;
+  top: -46px;
+  left: 80%;
+}
+
 .footer_link {
-  margin-top: 78.36px;
+  padding-top: 78.36px;
   display: flex;
   justify-content: center;
 }
@@ -871,6 +860,11 @@ footer {
   .footer_logo {
     margin-right: 310.69px;
   }
+}
+
+.footer_logo:hover {
+  opacity: 0.8;
+  transform: translateY(2px);
 }
 
 .footer_link a {
@@ -891,6 +885,9 @@ footer {
   margin-bottom: 46px;
 }
 
+.footer_menu2 {
+  margin-bottom: 20px;
+}
 
 .footer_menu2 li {
   margin-bottom: 30px;
@@ -910,79 +907,79 @@ footer {
 /*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ページ共通 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
 .background_other {
-    height: 290px;
-    background-image: url("../image/background_other.png");
-    background-size: cover;
-  }
-  
-  .background_other h1 {
-    font: normal normal bold 28px Noto Sans CJK JP;
-    letter-spacing: 8.4px;
-    color: #FF5555;
-    text-align: center;
-    padding-top: 128px;
-  }
-  
-  .background_other h2 {
-    font: normal normal bold 22px Noto Sans CJK JP;
-    letter-spacing: 4.4px;
-    color: #2E2E2E;
-    text-align: center;
-    margin-top: 19px;
-  }
-  
-  .subtitle {
-    height: 35px;
-    background-color: #F8F8F8;
-  }
-  
-  .subtitle p {
-    padding-top: 8px;
-    margin-left: 10%;
-    font: normal normal bold 14px Yu Gothic;
-  }
-  
-  /*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ TAM日記 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
-  
-  /*------------------------------------ 日記一覧 --------------------------------------*/
-  
-  /*    */
-  
-  /*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 会社概要 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
-  
-  .company_informatino {
-    margin-top: 97px;
-  }
-  
-  .company_informatino ul {
-    margin: auto;
-    width: 978.93px;
-  }
-  
-  .company_informatino hr {
-    border: 1px solid #E7E7E7;
-    width: 978.93px;
-  }
-  
-  .company_informatino_row {
-    display: flex;
-    margin: 20px 0 19px;
-    position: relative;
-  }
-  
-  .information_title {
-    font: normal normal bold 16px Noto Sans CJK JP;
-    color: #2E2E2E;
-    position: absolute;
-  }
-  
-  .information_details {
-    font: normal normal normal 16px Noto Sans CJK JP;
-    color: #2E2E2E;
-    position: relative;
-    left: 252px;
-  }
-  
-  .information_details p {
-    margin-bottom: 3px;
-  }
+  height: 290px;
+  background-image: url("../image/background_other.png");
+  background-size: cover;
+}
+
+.background_other h1 {
+  font: normal normal bold 28px Noto Sans CJK JP;
+  letter-spacing: 8.4px;
+  color: #FF5555;
+  text-align: center;
+  padding-top: 128px;
+}
+
+.background_other h2 {
+  font: normal normal bold 22px Noto Sans CJK JP;
+  letter-spacing: 4.4px;
+  color: #2E2E2E;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.subtitle {
+  height: 35px;
+  background-color: #F8F8F8;
+}
+
+.subtitle p {
+  padding-top: 8px;
+  margin-left: 10%;
+  font: normal normal bold 14px Yu Gothic;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ TAM日記 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+/*------------------------------------ 日記一覧 --------------------------------------*/
+
+/*    */
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 会社概要 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.company_informatino {
+  margin-top: 97px;
+}
+
+.company_informatino ul {
+  margin: auto;
+  width: 978.93px;
+}
+
+.company_informatino hr {
+  border: 1px solid #E7E7E7;
+  width: 978.93px;
+}
+
+.company_informatino_row {
+  display: flex;
+  margin: 20px 0 19px;
+  position: relative;
+}
+
+.information_title {
+  font: normal normal bold 16px Noto Sans CJK JP;
+  color: #2E2E2E;
+  position: absolute;
+}
+
+.information_details {
+  font: normal normal normal 16px Noto Sans CJK JP;
+  color: #2E2E2E;
+  position: relative;
+  left: 252px;
+}
+
+.information_details p {
+  margin-bottom: 3px;
+}

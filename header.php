@@ -18,7 +18,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <script>
+    <!-- <script>
         (function(d) {
             var config = {
                     kitId: 'pfx5euy',
@@ -47,7 +47,7 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
-    </script>
+    </script> -->
     <title>Airsapo TAM</title>
 
     <?php wp_head(); ?>
