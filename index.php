@@ -18,7 +18,7 @@ Template Name: トップページ
     <img class="top_white_back" src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
     <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
-    <a href="">CLICK</a>
+    <a class="common_button" href="">CLICK</a>
   </div>
 </div>
 
@@ -56,7 +56,7 @@ Template Name: トップページ
         </p>
       </li>
     </ul>
-    <a class="strength_more">MORE</a>
+    <a class="strength_more common_button">MORE</a>
   </div>
 </div>
 
@@ -70,7 +70,7 @@ Template Name: トップページ
     <div class="interview_right_box">
       <h3>山田太郎様</h3>
       <p>最初の4所帯のアパートの客付けや管理も安定しお任せしておりました。その中で今年に入って、別の物件の部屋が3つ空いてしまったので、竹島さんに管理の相談をしてお任せすることにしました。</p>
-      <a href="">MORE</a>
+      <a class="common_button" href="">MORE</a>
     </div>
   </div>
 </div>
@@ -123,7 +123,7 @@ Template Name: トップページ
     </div>
   </div>
   <div class="more_button">
-    <a href="">MORE</a>
+    <a class="common_button" href="">MORE</a>
   </div>
 </div>
 

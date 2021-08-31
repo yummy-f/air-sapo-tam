@@ -11,7 +11,7 @@
     <ul class="footer_menu2">
       <li class="footer_menu2_li1"><a href="">物件のオーナー様へ</a></li>
       <li><a href="">お問い合わせ</a></li>
-      <li><a href="">プライバシーポリシー</a></li>
+      <li><a href="privacy_policy">プライバシーポリシー</a></li>
       <li><a href="">会社概要</a></li>
     </ul>
   </div>

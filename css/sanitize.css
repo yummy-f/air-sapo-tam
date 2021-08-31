@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-p, h1, h2, h3, ul, hr{
+p, h1, h2, h3, ul, hr, ol{
     margin: 0;
     padding: 0;
 }

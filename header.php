@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/app.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/custom.css">
+    <!-- 会社概要 -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/company.css">
+    <!-- プライバシーポリシー -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/privacy_policy.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsy2knc.css">
 
     <!-- jquery -->
@@ -53,8 +57,6 @@
     <?php wp_head(); ?>
 
 </head>
-
-<!-- テスト -->
 
 <body>
     <!------------------------------- ヘッダー -------------------------------------->

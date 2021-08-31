@@ -1,0 +1,40 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ プライバシーポリシー ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.privacy_def {
+  padding: 88px 0 47px;
+  text-align: center;
+  font: normal normal bold 16px/32px Noto Sans CJK JP;
+  letter-spacing: 0.8px;
+  color: #2E2E2E;
+}
+
+.privacy_details {
+  padding: 64px 85px 65px 90px;
+  background-color: #E7E7E7;
+  width: 980px;
+  margin: 0 auto 95px;
+}
+
+.privacy_details h3 {
+  font: normal normal bold 16px/32px Noto Sans CJK JP;
+  letter-spacing: 0.8px;
+  color: #2E2E2E;
+  margin-bottom: 18px;
+}
+
+.privacy_explain {
+  width: 805px;
+  margin-bottom: 22px;
+}
+
+.privacy_details p, li {
+  text-align: left;
+  font: normal normal normal 14px/28px Noto Sans CJK JP;
+  letter-spacing: 0.7px;
+  color: #2E2E2E;
+  list-style: decimal;
+}
+
+.privacy_explain ol {
+  padding-left: 20px;
+}

@@ -105,7 +105,12 @@ Template Name: 会社概要
     </li>
     <hr>
   </ul>
-
 </div>
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6534537424363!2d139.80850851568476!3d35.7101446301876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ed6f9ddd30f%3A0x918ba47a310c8809!2z5p2x5Lqs44K944Op44Oe44OB!5e0!3m2!1sja!2sjp!4v1630422357201!5m2!1sja!2sjp" width="980" height="305" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<hr>
 
 <?php get_footer(); ?>

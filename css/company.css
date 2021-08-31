@@ -1,0 +1,43 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 会社概要 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.company_informatino {
+  margin-top: 97px;
+}
+
+.company_informatino ul {
+  margin: auto;
+  width: 978.93px;
+}
+
+.company_informatino hr {
+  border: 1px solid #E7E7E7;
+  width: 978.93px;
+}
+
+.company_informatino_row {
+  display: flex;
+  margin: 20px 0 19px;
+  position: relative;
+}
+
+.information_title {
+  font: normal normal bold 16px Noto Sans CJK JP;
+  color: #2E2E2E;
+  position: absolute;
+}
+
+.information_details {
+  font: normal normal normal 16px Noto Sans CJK JP;
+  color: #2E2E2E;
+  position: relative;
+  left: 252px;
+}
+
+.information_details p {
+  margin-bottom: 3px;
+}
+
+.map {
+  text-align: center;
+  padding: 62px 0;
+}
