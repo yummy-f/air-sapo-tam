@@ -46,7 +46,6 @@ header {
   }
 }
 
-
 .header_logo img {
   width: 100%;
 }
@@ -263,6 +262,13 @@ nav.globalMenuSp.active {
   width: 100%;
 }
 
+@media (min-width:1225px) {
+  .header_back {
+    width: 100%;
+    height: 445px;
+  }
+}
+
 .main h1 {
   position: absolute;
   top: 65px;
@@ -276,7 +282,7 @@ nav.globalMenuSp.active {
   white-space: nowrap;
 }
 
-@media (min-width:1000px) {
+@media (min-width:770px) {
   .main h1 {
     top: 143px;
     font-size: 24px;
@@ -316,7 +322,7 @@ nav.globalMenuSp.active {
   .top_white {
     top: 346px;
     width: 980px;
-    height: 227px;
+    height: 228px;
   }
 }
 
@@ -359,7 +365,7 @@ nav.globalMenuSp.active {
   box-shadow: 0px 10px 20px #0000001A;
 }
 
-@media (min-width:850px) {
+@media (min-width:770px) {
   .top_white_universe {
     top: 39px;
     width: 552.3px;
@@ -584,6 +590,7 @@ nav.globalMenuSp.active {
   .strength_pic_list1 li {
     width: 306px;
     margin-bottom: 0;
+    text-align: center;
   }
 }
 
@@ -654,6 +661,7 @@ nav.globalMenuSp.active {
   .strength_pic_list2 li {
     width: 306px;
     margin-bottom: 0;
+    text-align: center;
   }
 }
 
@@ -687,6 +695,12 @@ nav.globalMenuSp.active {
   letter-spacing: 0.8px;
   white-space: nowrap;
   box-shadow: 0px 10px 20px #0000001A;
+}
+
+@media (min-width:770px) {
+  .strength_more {
+    margin: 52px auto 0;
+  }
 }
 
 @media (min-width:1000px) {
@@ -868,7 +882,8 @@ nav.globalMenuSp.active {
   .interview_right_box a {
     margin-left: 63.19px;
     font: normal normal bold 16px "Noto Sans CJK JP";
-    width: 103px;;
+    width: 103px;
+    ;
   }
 }
 
@@ -881,7 +896,7 @@ nav.globalMenuSp.active {
   height: 1600px;
 }
 
-@media (min-width:1000px) {
+@media (min-width:770px) {
   .flow {
     height: 990px;
   }
@@ -1078,9 +1093,23 @@ footer {
 
 @media (min-width:770px) {
   .footer_link {
-    padding-top: 78.36px;
+    width: 100%;
+    padding: 78.36px 10px 0 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width:1185px) {
+  .footer_link {
+    width: 1167px;
+    padding: 78.36px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1185,7 +1214,7 @@ a:hover {
 }
 
 .subtitle p {
-  width:979.5px;
+  width: 979.5px;
   padding-top: 8px;
   margin: 0 auto;
   font: normal normal bold 14px Yu Gothic;
