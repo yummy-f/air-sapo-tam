@@ -1113,22 +1113,21 @@ footer {
   }
 }
 
-.footer_logo {
+.footer_link div {
   margin-right: 0px;
   height: 47.29px;
-  margin-bottom: 20px;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 @media (min-width:770px) {
-  .footer_logo {
+  .footer_link div {
     margin-right: 217.5px;
     margin-bottom: 0;
   }
 }
 
 @media (min-width:1000px) {
-  .footer_logo {
+  .footer_link div {
     margin-right: 310.69px;
     margin-bottom: 0;
   }
@@ -1219,9 +1218,3 @@ a:hover {
   margin: 0 auto;
   font: normal normal bold 14px Yu Gothic;
 }
-
-/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ TAM日記 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
-
-/*------------------------------------ 日記一覧 --------------------------------------*/
-
-/*    */
