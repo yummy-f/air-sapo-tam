@@ -27,7 +27,7 @@
   margin-bottom: 22px;
 }
 
-.privacy_details p, li {
+.privacy_details p, .privacy_details li {
   text-align: left;
   font: normal normal normal 14px/28px Noto Sans CJK JP;
   letter-spacing: 0.7px;
@@ -35,6 +35,26 @@
   list-style: decimal;
 }
 
-.privacy_explain ol {
+.privacy_details ul li {
+  list-style: disc;
+}
+
+.org_style {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+.org_style li {
+  list-style: none!important;
+  counter-increment: cnt;
+  text-indent: -2em;
+  padding-left: 0.5em;
+}
+
+.org_style li::before {
+  content: "(" counter(cnt) ") ";
+}
+
+.privacy_explain ol, .privacy_details ul {
   padding-left: 20px;
 }
