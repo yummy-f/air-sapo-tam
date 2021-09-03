@@ -7,11 +7,14 @@
 
     <!-- css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.7/css/font-awesome.min.css">
+    <!-- 初期化 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/app.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/custom.css">
     <!-- 会社概要 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/company.css">
+    <!-- お問い合わせ -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/contact.css">
     <!-- プライバシーポリシー -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/privacy_policy.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsy2knc.css">
@@ -22,36 +25,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-    <!-- <script>
-        (function(d) {
-            var config = {
-                    kitId: 'pfx5euy',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h = d.documentElement,
-                t = setTimeout(function() {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout),
-                tk = d.createElement("script"),
-                f = false,
-                s = d.getElementsByTagName("script")[0],
-                a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function() {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) {}
-            };
-            s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script> -->
+
     <title>Airsapo TAM</title>
 
     <?php wp_head(); ?>
@@ -76,7 +50,7 @@
                     <li><a href="#">管理事例</a></li>
                     <li><a href="tam_diary">TAM日記</a></li>
                     <li><a href="company">会社概要</a></li>
-                    <li><a href="#">お問い合わせ無料</a></li>
+                    <li><a href="contact">お問い合わせ無料</a></li>
                     <li><a href="#">03-6453-6656（無料）</a></li>
                 </ul>
             </nav>

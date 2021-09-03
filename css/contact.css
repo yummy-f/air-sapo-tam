@@ -1,0 +1,47 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ お問い合わせ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.contact_title h2 {
+  text-align: center;
+  margin: 91px 0 73px;
+  font: normal normal bold 28px/40px Noto Sans CJK JP;
+  color: #2E2E2E;
+}
+
+.contact_form {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.contact_form h3 {
+  text-align: center;
+font: normal normal bold 22px/32px Noto Sans CJK JP;
+color: #FF5555;
+}
+
+.notice {
+  text-align: left;
+  font: normal normal 300 14px/20px Noto Sans CJK JP;
+  color: #2E2E2E;
+}
+
+.notice span {
+  text-align: left;
+  font: normal normal medium 20px/20px Noto Sans CJK JP;
+  color: #B02020;
+}
+
+.company_informatino {
+  margin-top: 50px;
+}
+
+@media (min-width:770px) {
+  .company_informatino {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width:1050px) {
+  .company_informatino {
+    margin-top: 97px;
+  }
+}

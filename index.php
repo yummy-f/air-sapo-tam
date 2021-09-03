@@ -22,8 +22,20 @@ Template Name: トップページ
   </div>
 </div>
 
+<div class="main_mobile">
+  <img class="header_back_mobile" src="<?php echo get_template_directory_uri(); ?>/image/background_top_mobile.png" alt="">
 
-<!------------------------------- 強み -------------------------------------->
+  <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
+  
+  <div class="top_white_mobile">
+    <img class="top_white_universe_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
+    <img class="top_white_logo_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
+    <a class="common_button_mobile common_button" href="">CLICK</a>
+  </div>
+</div>
+  
+  
+  <!------------------------------- 強み -------------------------------------->
 <div class="Strengths">
   <div class="strengths_main">
     <h2>STRENGTHS</h2>
