@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/app.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/custom.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/archive.css">
     <!-- 会社概要 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/company.css">
     <!-- お問い合わせ -->
