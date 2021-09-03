@@ -199,7 +199,7 @@ nav.globalMenuSp ul li {
   padding: 6px;
   width: 100%;
   transition: .4s all;
-  font: normal normal bold 10px Yu Gothic;
+  font: normal normal bold 10px Noto Sans CJK JP;
   color: #4A4A4A;
   border-bottom: 1px solid rgb(83, 83, 83);
   white-space: nowrap;
@@ -608,9 +608,10 @@ nav.globalMenuSp.active {
 
 .strength_pic_list1 p {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #1A1A1A;
 }
+
 
 .strength_pic_list2 {
   display: block;
@@ -621,6 +622,12 @@ nav.globalMenuSp.active {
   right: 0;
   margin: auto;
   text-align: center;
+}
+
+@media (min-width:770px) {
+  .strength_pic_list1 p {
+    font-size: 18px;
+  }
 }
 
 @media (min-width:770px) {
@@ -679,8 +686,14 @@ nav.globalMenuSp.active {
 
 .strength_pic_list2 p {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: #1A1A1A;
+}
+
+@media (min-width:770px) {
+  .strength_pic_list2 p {
+    font-size: 18px;
+  }
 }
 
 .strength_more {
@@ -690,7 +703,7 @@ nav.globalMenuSp.active {
   padding: 5px 25px 5px 25px;
   font: normal normal bold 16px Noto Sans CJK JP;
   color: #fff;
-  margin: 350px auto 0;
+  margin: 300px auto 0;
   display: block;
   letter-spacing: 0.8px;
   white-space: nowrap;
@@ -801,7 +814,7 @@ nav.globalMenuSp.active {
 .interview_right_box {
   position: absolute;
   width: 350px;
-  height: 294px;
+  height: 300px;
   top: 220px;
   left: 0;
   background-color: #E7E7E7;
@@ -1056,14 +1069,14 @@ nav.globalMenuSp.active {
 
 footer {
   position: relative;
-  font: normal normal bold 12px "Yu Gothic";
+  font: normal normal bold 12px "Noto Sans CJK JP";
   color: #4A4A4A;
   white-space: nowrap;
 }
 
 @media (min-width:770px) {
   footer {
-    font: normal normal bold 15px "Yu Gothic";
+    font: normal normal bold 15px "Noto Sans CJK JP";
   }
 }
 
@@ -1171,7 +1184,7 @@ footer {
 .copy_write {
   text-align: center;
   margin: 35.5px 0 37.5px;
-  font: normal normal bold 15px Yu Gothic;
+  font: normal normal bold 15px Noto Sans CJK JP;
   color: #4A4A4A;
 }
 
@@ -1186,25 +1199,44 @@ a:hover {
 }
 
 .background_other {
-  height: 290px;
+  height: 200px;
   background-image: url("../image/background_other.png");
   background-size: cover;
 }
 
+@media (min-width:770px) {
+  .background_other {
+    height: 290px;
+  }
+}
+
 .background_other h1 {
-  font: normal normal bold 28px Noto Sans CJK JP;
+  font: normal normal bold 22px Noto Sans CJK JP;
   letter-spacing: 8.4px;
   color: #FF5555;
   text-align: center;
-  padding-top: 128px;
+  padding-top: 75px;
+}
+
+@media (min-width:770px) {
+  .background_other h1 {
+    font-size: 28px;
+    padding-top: 128px;
+  }
 }
 
 .background_other h2 {
-  font: normal normal bold 22px Noto Sans CJK JP;
+  font: normal normal bold 18px Noto Sans CJK JP;
   letter-spacing: 4.4px;
   color: #2E2E2E;
   text-align: center;
   margin-top: 19px;
+}
+
+@media (min-width:770px) {
+  .background_other h2 {
+    font-size: 22px;
+  }
 }
 
 .subtitle {
@@ -1213,8 +1245,21 @@ a:hover {
 }
 
 .subtitle p {
-  width: 979.5px;
+  width: 300px;
   padding-top: 8px;
   margin: 0 auto;
-  font: normal normal bold 14px Yu Gothic;
+  font: normal normal bold 12px Noto Sans CJK JP;
+}
+
+@media (min-width:770px) {
+  .subtitle p {
+    width: 600px;
+    font-size: 14px
+  }
+}
+
+@media (min-width:1050px) {
+  .subtitle p {
+    width: 979.5px;
+  }
 }
