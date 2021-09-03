@@ -6,7 +6,7 @@
 }
 
 .diary_main {
-width: 80%;
+width: 979.5px;
 text-align: center;
 margin: 0 auto;
 padding-bottom: 95.5px;
@@ -20,8 +20,6 @@ padding-bottom: 95.5px;
   font-family: 'Noto Sans JP', sans-serif;
   border-top: solid 1px #E7E7E7;
   border-bottom: solid 1px #E7E7E7;
-  text-align: center;
-  
 }
 
 .post_item p {
@@ -47,6 +45,7 @@ padding-top: 38px;
 } 
 
 .blog_title {
+  text-align: left;
   width: 600px;
   display: inline-block;
   margin-top: 28px;
