@@ -28,7 +28,6 @@ Template Name: TAM日記
   );
   $event_query = new WP_Query($args);
   ?>
-
   <?php if ($event_query->have_posts()) : ?>
     <?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
       <section class="post_item">

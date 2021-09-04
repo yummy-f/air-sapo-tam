@@ -9,3 +9,4 @@ function post_has_archive($args, $post_type)
     return $args;
 }
 add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+add_theme_support('post-thumbnails');

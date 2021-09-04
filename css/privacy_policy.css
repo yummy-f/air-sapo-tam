@@ -6,7 +6,7 @@
   font: normal normal bold 14px/24px Noto Sans CJK JP;
   letter-spacing: 0.8px;
   color: #2E2E2E;
-  width: 300px;
+  width: 90%;
   margin: auto;
 }
 
@@ -34,7 +34,7 @@
 
 .privacy_details {
   background-color: #E7E7E7;
-  width: 300px;
+  width: 90%;
   margin: 0 auto 50px;
   padding: 15px 20px 15px 20px;
 }
@@ -42,7 +42,7 @@
 @media (min-width:770px) {
   .privacy_details {
     margin-bottom: 95px;
-    width: 600px;
+    width: 80%;
     padding: 30px 40px 30px 40px;
   }
 }
@@ -68,13 +68,13 @@
 }
 
 .privacy_explain {
-  width: 260px;
+  width: 100%;
   margin-bottom: 18px;
 }
 
 @media (min-width:770px) {
   .privacy_explain {
-    width: 520px;
+    width: 100%;
     margin-bottom: 22px;
   }
 }

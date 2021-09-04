@@ -1319,7 +1319,7 @@ a:hover {
 }
 
 .subtitle p {
-  width: 300px;
+  width: 90%;
   padding-top: 8px;
   margin: 0 auto;
   font: normal normal bold 12px Noto Sans CJK JP;
@@ -1327,7 +1327,7 @@ a:hover {
 
 @media (min-width:770px) {
   .subtitle p {
-    width: 600px;
+    width: 80%;
     font-size: 14px
   }
 }
