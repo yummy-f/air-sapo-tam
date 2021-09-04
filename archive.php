@@ -21,10 +21,11 @@ Template Name: TAM日記
 
 <!-------------------------------- 日記一覧 ----------------------------------->
 <div class="diary_main">
-
   <?php
   $args = array(
     'post_type' => 'post',
+    'posts_per_page' => 1,
+    'paged' => $paged
   );
   $event_query = new WP_Query($args);
   ?>
@@ -32,7 +33,7 @@ Template Name: TAM日記
   <?php if ($event_query->have_posts()) : ?>
     <?php while ($event_query->have_posts()) : $event_query->the_post(); ?>
       <section class="post_item">
-       <p><?php the_date(); ?></p>
+        <p class="blog_date"><?php echo get_the_date(); ?></p>
         <div class="blog_category"><?php the_category(' '); ?></div>
         <div class="blog_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
       </section>
@@ -42,8 +43,15 @@ Template Name: TAM日記
       <p>現在日記はありません。</p>
     </div>
   <?php endif; ?>
-
 </div>
+
+<?php
+if(function_exists('wp_pagenavi')){
+	wp_pagenavi(array('query'=>$event_query));
+}
+
+wp_reset_postdata();
+?>
 
 <hr>
 
