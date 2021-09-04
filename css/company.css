@@ -18,12 +18,12 @@
 
 .company_informatino ul {
   margin: auto;
-  width: 300px;
+  width: 90%;
 }
 
 @media (min-width:770px) {
   .company_informatino ul {
-    width: 600px;
+    width: 80%;
   }
 }
 
@@ -35,12 +35,12 @@
 
 .company_informatino hr {
   border: 1px solid #E7E7E7;
-  width: 300px;
+  width: 100%;
 }
 
 @media (min-width:770px) {
   .company_informatino hr {
-    width: 600px;
+    width: 100%;
   }
 }
 
@@ -73,14 +73,14 @@
   color: #2E2E2E;
   position: relative;
   left: 110px;
-  width: 180px;
+  width: 70%;
 }
 
 @media (min-width:770px) {
   .information_details {
     font-size: 16px;
     left: 180px;
-    width: 400px;
+    width: 55%;
   }
 }
 
@@ -101,13 +101,13 @@
 }
 
 .map iframe {
-  width: 300px;
+  width: 90%;
   height: 250px;
 }
 
 @media (min-width:770px) {
   .map iframe {
-    width: 600px;
+    width: 80%;
     height: 250px;
   }
 }
