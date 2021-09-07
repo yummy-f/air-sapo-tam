@@ -78,9 +78,9 @@ header {
   height: 2px;
   left: 6px;
   background: rgb(83, 83, 83);
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .hamburger span:nth-child(1) {
@@ -98,15 +98,8 @@ header {
 /* ナビ開いてる時のボタン */
 
 .hamburger.active {
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition-delay: 0.6s;
-  -o-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+  transition: all 0.1s ease-in-out;
+  transition-delay: 0.1s;
   transform: rotate(45deg);
 }
 
@@ -116,9 +109,9 @@ header {
 
 .hamburger.active span:nth-child(1), .hamburger.active span:nth-child(3) {
   background: rgb(83, 83, 83);
-  -webkit-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -140,7 +133,7 @@ nav.globalMenuSp {
   font-size: 1rem;
   color: #4A4A4A;
   display: none;
-  transition: opacity .6s ease, visibility 1.6s ease;
+  transition: opacity .1s ease, visibility .1s ease;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 42px 14px 0 17.5px;
   align-items: center;
@@ -155,24 +148,13 @@ nav.globalMenuSp {
   nav.globalMenuSp {
     width: 70%;
     font-size: 1.6rem;
-    color: #4A4A4A;
-    display: none;
-    transition: opacity .6s ease, visibility 1.6s ease;
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 60px 20px 0 25px;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 60px 20px 0 20px;
   }
 }
 
 @media (min-width:1175px) {
   nav.globalMenuSp {
     position: relative;
-    font-size: 1.6rem;
     opacity: 1;
     display: block;
     background-color: transparent;
@@ -198,8 +180,8 @@ nav.globalMenuSp ul li {
   list-style-type: none;
   padding: 6px;
   width: 100%;
-  transition: .4s all;
-  font: normal normal bold 10px Noto Sans CJK JP;
+  transition: .1s all;
+  font: normal normal bold 10px Noto Sans CJK JP, sans-serif;
   color: #4A4A4A;
   border-bottom: 1px solid rgb(83, 83, 83);
   white-space: nowrap;
@@ -209,7 +191,6 @@ nav.globalMenuSp ul li {
 @media (min-width:770px) {
   nav.globalMenuSp ul li {
     padding: 6px;
-    border-bottom: none;
     font-size: 15px;
   }
 }
@@ -217,7 +198,6 @@ nav.globalMenuSp ul li {
 @media (min-width:1175px) {
   nav.globalMenuSp ul li {
     padding: 0;
-    border-bottom: none;
     font-size: 15px;
   }
 }
@@ -249,7 +229,6 @@ nav.globalMenuSp.active {
   .main {
     display: block;
     position: relative;
-    height: 200px;
     height: 427px;
   }
   .main_mobaile {
@@ -263,14 +242,20 @@ nav.globalMenuSp.active {
   }
 }
 
-.header_back, .header_back_mobile {
-  width: 100%;
+@media (min-width:1500px) {
+  .main {
+    height: 650px;
+  }
 }
 
-@media (min-width:1225px) {
-  .header_back {
-    height: 445px;
+@media (min-width:1660px) {
+  .main {
+    height: 700px;
   }
+}
+
+.header_back, .header_back_mobile {
+  width: 100%;
 }
 
 .main h1 {
@@ -299,6 +284,12 @@ nav.globalMenuSp.active {
     top: 178px;
     font-size: 24px;
     letter-spacing: 12px;
+  }
+}
+
+@media (min-width:1500px) {
+  .main h1 {
+    top: 220px;
   }
 }
 
@@ -366,9 +357,21 @@ nav.globalMenuSp.active {
 
 @media (min-width:1000px) {
   .top_white {
-    top: 346px;
+    top: 345px;
     width: 980px;
     height: 228px;
+  }
+}
+
+@media (min-width:1500px) {
+  .top_white {
+    top: 400px;
+  }
+}
+
+@media (min-width:1600px) {
+  .top_white {
+    top: 450px;
   }
 }
 
@@ -779,7 +782,7 @@ nav.globalMenuSp.active {
   width: 103px;
   height: 33px;
   padding: 5px 25px 5px 25px;
-  font: normal normal bold 16px Noto Sans CJK JP;
+  font: normal normal bold 16px Noto Sans CJK JP, sans-serif;
   color: #fff;
   margin: 300px auto 0;
   display: block;
@@ -803,7 +806,7 @@ nav.globalMenuSp.active {
 /*------------------------------------ INTERVIEW --------------------------------------*/
 
 .interview_box {
-  height: 659.1px;
+  height: 730px;
   margin-bottom: 125px;
 }
 
@@ -818,7 +821,7 @@ nav.globalMenuSp.active {
   padding-top: 84.7px;
   margin-bottom: 13px;
   text-align: center;
-  font: normal normal bold 28px Noto Sans CJK JP;
+  font: normal normal bold 28px Noto Sans CJK JP, sans-serif;
   letter-spacing: 8.4px;
   color: #FF5555;
 }
@@ -828,7 +831,7 @@ nav.globalMenuSp.active {
     padding-top: 121px;
     margin-bottom: 19px;
     text-align: center;
-    font: normal normal bold 28px Noto Sans CJK JP;
+    font: normal normal bold 28px Noto Sans CJK JP, sans-serif;
     letter-spacing: 8.4px;
     color: #FF5555;
   }
@@ -837,7 +840,7 @@ nav.globalMenuSp.active {
 .interview_box h2 {
   margin-bottom: 70px;
   text-align: center;
-  font: normal normal bold 22px Noto Sans CJK JP;
+  font: normal normal bold 22px Noto Sans CJK JP, sans-serif;
   letter-spacing: 4.4px;
   color: #2E2E2E;
 }
@@ -892,7 +895,7 @@ nav.globalMenuSp.active {
 .interview_right_box {
   position: absolute;
   width: 350px;
-  height: 300px;
+  height: 320px;
   top: 220px;
   left: 0;
   background-color: #E7E7E7;
@@ -921,7 +924,7 @@ nav.globalMenuSp.active {
   padding-top: 33.15px;
   padding-bottom: 28.7px;
   padding-left: 44.24px;
-  font: normal normal bold 15px "Noto Sans CJK JP";
+  font: normal normal bold 15px "Noto Sans CJK JP", sans-serif;
   letter-spacing: 3.1px;
   color: #2E2E2E;
 }
@@ -931,7 +934,7 @@ nav.globalMenuSp.active {
     padding-top: 47.36px;
     padding-bottom: 41px;
     padding-left: 63.19px;
-    font: normal normal bold 22px "Noto Sans CJK JP";
+    font: normal normal bold 22px "Noto Sans CJK JP", sans-serif;
     letter-spacing: 4.4px;
   }
 }
@@ -941,7 +944,7 @@ nav.globalMenuSp.active {
   margin-bottom: 15px;
   width: 288.4px;
   text-align: left;
-  font: normal normal normal 12px/32px Noto Sans CJK JP;
+  font: normal normal normal 12px/32px Noto Sans CJK JP, sans-serif;
   letter-spacing: 2.3px;
   color: #2E2E2E;
 }
@@ -951,7 +954,7 @@ nav.globalMenuSp.active {
     margin-left: 63.19px;
     margin-bottom: 53px;
     width: 412px;
-    font: normal normal normal 16px/32px Noto Sans CJK JP;
+    font: normal normal normal 16px/32px Noto Sans CJK JP, sans-serif;
     letter-spacing: 3.2px;
   }
 }
@@ -960,7 +963,7 @@ nav.globalMenuSp.active {
   margin-left: 44.24px;
   padding: 6px 25px 6px 26px;
   background-color: #3D3D3D;
-  font: normal normal bold 12px "Noto Sans CJK JP";
+  font: normal normal bold 12px "Noto Sans CJK JP", sans-serif;
   letter-spacing: 0.8px;
   color: #FFFFFF;
   box-shadow: 0px 10px 20px #0000001A;
@@ -972,7 +975,7 @@ nav.globalMenuSp.active {
 @media (min-width:1000px) {
   .interview_right_box a {
     margin-left: 63.19px;
-    font: normal normal bold 16px "Noto Sans CJK JP";
+    font: normal normal bold 16px "Noto Sans CJK JP", sans-serif;
     width: 103px;
     ;
   }
@@ -1002,7 +1005,7 @@ nav.globalMenuSp.active {
 .flow h1 {
   text-align: center;
   padding: 66px 0 14px;
-  font: normal normal bold 28px "Noto Sans CJK JP";
+  font: normal normal bold 28px "Noto Sans CJK JP", sans-serif;
   letter-spacing: 8.4px;
 }
 
@@ -1010,7 +1013,7 @@ nav.globalMenuSp.active {
   .flow h1 {
     text-align: center;
     padding: 94.36px 0 19px;
-    font: normal normal bold 28px "Noto Sans CJK JP";
+    font: normal normal bold 28px "Noto Sans CJK JP", sans-serif;
     letter-spacing: 8.4px;
   }
 }
@@ -1018,7 +1021,7 @@ nav.globalMenuSp.active {
 .flow h2 {
   text-align: center;
   margin-bottom: 72px;
-  font: normal normal normal 22px "Noto Sans CJK JP"!important;
+  font: normal normal normal 22px "Noto Sans CJK JP", sans-serif!important;
   letter-spacing: 4.4px;
 }
 
@@ -1097,7 +1100,7 @@ nav.globalMenuSp.active {
 }
 
 .icon_box p {
-  font: normal normal bold 18px "Noto Sans CJK JP";
+  font: normal normal bold 18px "Noto Sans CJK JP", sans-serif;
   letter-spacing: 3.6px;
   color: #2E2E2E;
   padding-top: 38px;
@@ -1110,7 +1113,7 @@ nav.globalMenuSp.active {
 .flow_constract {
   margin-top: 17px;
   margin-bottom: 18px;
-  font: normal normal bold 18px "Noto Sans CJK JP";
+  font: normal normal bold 18px "Noto Sans CJK JP", sans-serif;
   letter-spacing: 3.6px;
 }
 
@@ -1122,7 +1125,7 @@ nav.globalMenuSp.active {
 }
 
 .flow_detail {
-  font: normal normal normal 14px/32px "Noto Sans CJK JP";
+  font: normal normal normal 14px/32px "Noto Sans CJK JP", sans-serif;
 }
 
 .more_button {
@@ -1134,7 +1137,7 @@ nav.globalMenuSp.active {
 .more_button a {
   background-color: #FFFFFF;
   box-shadow: 0px 10px 20px #0000001A;
-  font: normal normal bold 16px "Noto Sans CJK JP";
+  font: normal normal bold 16px "Noto Sans CJK JP", sans-serif;
   letter-spacing: 0.8px;
   color: #232323;
   padding: 8px 25px 7px 26px;
@@ -1147,14 +1150,14 @@ nav.globalMenuSp.active {
 
 footer {
   position: relative;
-  font: normal normal bold 12px "Noto Sans CJK JP";
+  font: normal normal bold 12px "Noto Sans CJK JP", sans-serif;
   color: #4A4A4A;
   white-space: nowrap;
 }
 
 @media (min-width:770px) {
   footer {
-    font: normal normal bold 15px "Noto Sans CJK JP";
+    font: normal normal bold 15px "Noto Sans CJK JP", sans-serif;
   }
 }
 
@@ -1170,7 +1173,7 @@ footer {
 
 .footer_link {
   width: 350px;
-  padding-top: 15px;
+  padding-top: 40px;
   display: flex;
   margin: auto;
   /* text-align: center; */
@@ -1239,26 +1242,15 @@ footer {
   }
 }
 
-.footer_menu1 li {
+.footer_menu1 li, .footer_menu2 li {
   margin-bottom: 46px;
 }
 
-.footer_menu2 {
-  margin-bottom: 20px;
-}
-
-.footer_menu2 li {
-  margin-bottom: 30px;
-}
-
-.footer_menu2_li1 {
-  margin-bottom: 46px!important;
-}
 
 .copy_write {
   text-align: center;
   margin: 35.5px 0 37.5px;
-  font: normal normal bold 15px Noto Sans CJK JP;
+  font: normal normal bold 15px Noto Sans CJK JP, sans-serif;
   color: #4A4A4A;
 }
 
@@ -1285,7 +1277,7 @@ a:hover {
 }
 
 .background_other h1 {
-  font: normal normal bold 22px Noto Sans CJK JP;
+  font: normal normal bold 22px Noto Sans CJK JP, sans-serif;
   letter-spacing: 8.4px;
   color: #FF5555;
   text-align: center;
@@ -1300,7 +1292,7 @@ a:hover {
 }
 
 .background_other h2 {
-  font: normal normal bold 18px Noto Sans CJK JP;
+  font: normal normal bold 18px Noto Sans CJK JP, sans-serif;
   letter-spacing: 4.4px;
   color: #2E2E2E;
   text-align: center;
@@ -1322,7 +1314,7 @@ a:hover {
   width: 90%;
   padding-top: 8px;
   margin: 0 auto;
-  font: normal normal bold 12px Noto Sans CJK JP;
+  font: normal normal bold 12px Noto Sans CJK JP, sans-serif;
 }
 
 @media (min-width:770px) {
