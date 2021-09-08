@@ -127,29 +127,54 @@
 }
 
 /*  ページネーション  */
+
 .wp-pagenavi {
+  width: 90%;
   text-align: center;
-  margin-bottom: 96px;
-  font: normal normal normal 20px/29px Noto Sans CJK JP;
+  margin: 0 auto 96px;
+  font: normal normal normal 14px/29px Noto Sans CJK JP;
   color: #333333;
+}
+
+@media (min-width:770px) {
+  .wp-pagenavi {
+    width: 80%;
+    font: normal normal normal 20px/29px Noto Sans CJK JP;
+  }
 }
 
 .wp-pagenavi a {
   color: #333333;
 }
+
 .page, .extend {
+  /* margin-right: 10%; */
   border: none;
-  margin: 0 80px 0 0;
   padding: 0;
+}
+
+@media (min-width:770px) {
+  .page, .extend {
+    border: none;
+    margin: 0 80px 0 0;
+    padding: 0;
+  }
 }
 
 .current {
   border: none;
-  margin: 0 80px 0 0;
+  margin-right: 10%;
   padding: 12px 21px 14px;
   background-color: #3D3D3D;
-  color: #FFFFFF;;
+  color: #FFFFFF;
+  ;
   font-weight: normal;
+}
+
+@media (min-width:770px) {
+  .current {
+    margin: 0 80px 0 0;
+  }
 }
 
 .previouspostslink, .nextpostslink {
@@ -159,16 +184,27 @@
 }
 
 .previouspostslink {
-  margin-right: 160px;
   border: none;
-  font-size: 28px;
+  font-size: 20px;
+}
+
+@media (min-width:770px) {
+  .previouspostslink {
+    font-size: 28px;
+    margin-right: 10%;
+  }
 }
 
 .nextpostslink {
   border: none;
-  font-size: 28px;
+  font-size: 20px;
+  margin-left: 10%;
 }
 
-.nextpostslink {
-  margin-left: 80px;
+@media (min-width:770px) {
+  .nextpostslink {
+    border: none;
+    font-size: 28px;
+    margin-left: 80px;
+  }
 }
