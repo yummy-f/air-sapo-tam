@@ -57,7 +57,7 @@
 }
 
 .information_title {
-  font: normal normal bold 12px Noto Sans CJK JP;
+  font: normal normal bold 12px Noto Sans CJK JP, sans-serif;
   color: #2E2E2E;
   position: absolute;
 }
@@ -69,7 +69,7 @@
 }
 
 .information_details {
-  font: normal normal normal 12px Noto Sans CJK JP;
+  font: normal normal normal 12px Noto Sans CJK JP, sans-serif;
   color: #2E2E2E;
   position: relative;
   left: 110px;
