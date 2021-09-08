@@ -10,8 +10,11 @@
     <!-- 初期化 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/app.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/custom.css">
+    <!-- トップ -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/index.css">
+    <!-- TAM日記一覧 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/archive.css">
+    <!-- TAM日記 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/blog.css">
     <!-- 会社概要 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/company.css">
