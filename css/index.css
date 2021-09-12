@@ -56,8 +56,8 @@ header {
   display: block;
   position: fixed;
   z-index: 99;
-  right: 13px;
-  top: 19px;
+  right: 10px;
+  top: 10px;
   width: 42px;
   height: 42px;
   cursor: pointer;

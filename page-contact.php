@@ -24,10 +24,6 @@ Template Name: お問い合わせ
   <h2>無料問い合わせフォーム</h2>
 </div>
 
-<div class="contact_subtitle">
-  <h3>物件情報</h3>
-  <p class="notice"><span>*</span> は必須項目となります。必ずご記入ください。</p>
-</div>
 <!-- 
 <ul class="contact_form">
   <li>

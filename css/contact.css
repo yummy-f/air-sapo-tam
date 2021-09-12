@@ -140,6 +140,7 @@
 }
 
 /* 現在依頼中の不動産 */
+
 .small_title {
   font-size: 10px;
 }
@@ -167,6 +168,13 @@
 @media (min-width:770px) {
   .contact_form_items {
     width: 733px;
+    margin: 18px 40px;
+  }
+}
+
+@media (min-width:1050px) {
+  .contact_form_items {
+    width: 733px;
     margin: 27px 52px;
   }
 }
@@ -177,7 +185,7 @@
 
 @media (min-width:770px) {
   .mwform-radio-field-text {
- font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -188,15 +196,20 @@
 }
 
 .form1 .mwform-radio-field {
-  width: 80%;
+  width: 100%;
 }
 
 .form2 .mwform-radio-field {
-  width: 80%;
+  width: 100%;
 }
 
 .form1, .form2 {
   margin-bottom: 0px;
+}
+
+.form3 {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width:770px) {
@@ -212,8 +225,8 @@
   }
 }
 
-
 /* 物件所在地 */
+
 .input_text {
   font: normal normal normal 14px Noto Sans CJK JP, sans-serif;
   width: 100%;
@@ -224,7 +237,7 @@
   .input_text {
     width: 350px;
     height: 42px;
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
 
@@ -235,6 +248,7 @@
 }
 
 /* 内容 */
+
 .form_content {
   width: 100%;
   height: 200px;
@@ -256,18 +270,27 @@
 }
 
 /* お客様情報 */
+
 .user_form {
-margin: 20px 20px;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width:770px) {
   .user_form {
-    margin: 52px 27px;;
+    margin: 18px 40px;
   }
 }
 
+@media (min-width:1050px) {
+  .user_form {
+    margin: 27px 52px;
+  }
+}
 
 /*------------------------------------ 個人情報について --------------------------------------*/
+
 .check_privacy {
   margin-top: 55px;
   text-align: center;
@@ -310,6 +333,7 @@ margin: 20px 20px;
   background-color: #FCFCFC;
   overflow-y: scroll;
   border: 1px solid #AEAEAE;
+  padding-bottom: 20px;
 }
 
 @media (min-width:770px) {
@@ -335,7 +359,7 @@ margin: 20px 20px;
   color: #2E2E2E;
 }
 
-.check_privacy_content p {
+.check_privacy_content p, .check_privacy_content ol {
   margin-top: 8px;
   width: 90%;
   text-align: left;
@@ -345,41 +369,52 @@ margin: 20px 20px;
 }
 
 @media (min-width:770px) {
-  .check_privacy_content p {
+  .check_privacy_content p .check_privacy_content ol {
     width: 430px;
     font-size: 14px;
     line-height: 28px;
     margin-top: 13px;
   }
   .check_privacy_content h1 {
-  font-size: 16px;
-  line-height: 32px;
+    font-size: 16px;
+    line-height: 32px;
   }
 }
 
 @media (min-width:1050px) {
-  .check_privacy_content p {
+  .check_privacy_content p .check_privacy_content ol {
     width: 713px;
   }
 }
 
+.check_privacy_content p, .check_privacy_content li {
+  text-align: left;
+  /* font: normal normal normal 14px/28px Noto Sans CJK JP, sans-serif;
+  letter-spacing: 0.7px;
+  color: #2E2E2E; */
+  list-style: decimal;
+}
+
+.check_privacy_content ul li {
+  list-style: disc;
+}
+
+/* .check_privacy_content {} */
+
+.check_privacy_content ol, .check_privacy_content ul {
+  padding-left: 20px;
+}
+
 .privacy_check {
-  width: 307px;
+  text-align: center;
   margin: 40px auto 0;
 }
 
-/* @media (min-width:770px) {
-.privacy_check {
-  width: 307px;
-
+@media (min-width:770px) {
+  .privacy_check {
+    width: 307px;
   }
 }
-
-@media (min-width:1050px) {
-.privacy_check {
-  width: 307px;
-  }
-} */
 
 .privacy_check br {
   display: none;
@@ -392,15 +427,16 @@ margin: 20px 20px;
 .privacy_check label {
   margin-left: 11px;
   text-align: left;
-  font: normal normal bold 18px Noto Sans CJK JP, sans-serif;
+  font: normal normal bold 14px Noto Sans CJK JP, sans-serif;
   color: #2E2E2E;
 }
 
 .privacy_check_p {
   text-align: center;
-  margin: 23px auto 74px;
-  font: normal normal normal 14px Noto Sans CJK JP, sans-serif;
+  margin: 23px auto 40px;
+  font: normal normal normal 12px Noto Sans CJK JP, sans-serif;
   color: #2E2E2E;
+  width: 70%;
 }
 
 @media (min-width:770px) {
@@ -434,14 +470,14 @@ margin: 20px 20px;
 }
 
 .check_btn {
-  width: 330px;
-  height: 85px;
+  width: 250px;
+  height: 60px;
   background-color: #3D3D3D;
   box-shadow: 0px 10px 20px #0000001A;
-  font: normal normal normal 24px Noto Sans CJK JP, sans-serif;
+  font: normal normal normal 18px Noto Sans CJK JP, sans-serif;
   letter-spacing: 1.2px;
   color: #FFFFFF;
-  margin-bottom: 95px;
+  margin-bottom: 50px;
 }
 
 @media (min-width:770px) {
@@ -460,4 +496,36 @@ margin: 20px 20px;
     font-size: 24px;
     margin-bottom: 95px;
   }
+}
+
+.mw_wp_form_confirm .check_btn {
+  width: 200px;
+  height: 50px;
+}
+
+@media (min-width:770px) {
+  .mw_wp_form_confirm .check_btn_div {
+    display: flex;
+    width: 460px;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .mw_wp_form_confirm .check_btn {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (min-width:1050px) {
+  .mw_wp_form_confirm .check_btn_div {
+    width: 780px;
+  }
+  .mw_wp_form_confirm .check_btn {
+    width: 280px;
+    height: 70px;
+  }
+}
+
+.mw_wp_form_confirm .check_btn_div p:first-child{
+  display: none;
 }
