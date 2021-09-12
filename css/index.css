@@ -158,6 +158,7 @@ nav.globalMenuSp {
 
 @media (min-width:1175px) {
   nav.globalMenuSp {
+    right: 0;
     position: relative;
     opacity: 1;
     display: block;
