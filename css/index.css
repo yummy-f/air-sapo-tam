@@ -57,7 +57,7 @@ header {
   position: fixed;
   z-index: 99;
   right: 13px;
-  top: 3px;
+  top: 19px;
   width: 42px;
   height: 42px;
   cursor: pointer;
@@ -98,8 +98,8 @@ header {
 /* ナビ開いてる時のボタン */
 
 .hamburger.active {
-  transition: all 0.1s ease-in-out;
-  transition-delay: 0.1s;
+  transition: all 0.15s ease-in-out;
+  transition-delay: 0.15s;
   transform: rotate(45deg);
 }
 
@@ -115,31 +115,35 @@ header {
 }
 
 .hamburger.active span:nth-child(1) {
-  -webkit-transform: translateY(4px);
-  -ms-transform: translateY(4px);
-  -o-transform: translateY(4px);
-  transform: translateY(4px);
+  top: 11px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .hamburger.active span:nth-child(3) {
-  -webkit-transform: translateY(-16px) rotate(90deg);
-  -ms-transform: translateY(-16px) rotate(90deg);
-  -o-transform: translateY(-16px) rotate(90deg);
-  transform: translateY(-16px) rotate(90deg);
+  top: 11px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 nav.globalMenuSp {
+  right: -120%;
   width: 70%;
   font-size: 1rem;
   color: #4A4A4A;
-  display: none;
-  transition: opacity .1s ease, visibility .1s ease;
+  /* display: none; */
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  opacity: 0.8;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 42px 14px 0 17.5px;
   align-items: center;
   position: fixed;
   top: 0;
-  right: 0;
   bottom: 0;
   padding: 60px 20px 0 20px;
 }
@@ -180,7 +184,7 @@ nav.globalMenuSp ul li {
   list-style-type: none;
   padding: 6px;
   width: 100%;
-  transition: .1s all;
+  transition: .5s all;
   font: normal normal bold 10px Noto Sans CJK JP, sans-serif;
   color: #4A4A4A;
   border-bottom: 1px solid rgb(83, 83, 83);
@@ -216,6 +220,7 @@ nav.globalMenuSp ul li a {
 /* このクラスを、jQueryで付与・削除する */
 
 nav.globalMenuSp.active {
+  right: 0;
   opacity: 1;
   display: block;
 }
@@ -1246,7 +1251,6 @@ footer {
 .footer_menu1 li, .footer_menu2 li {
   margin-bottom: 46px;
 }
-
 
 .copy_write {
   text-align: center;
