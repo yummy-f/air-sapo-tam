@@ -467,6 +467,7 @@
 
 .submit_check {
   opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .check_btn {

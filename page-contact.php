@@ -39,6 +39,7 @@ Template Name: お問い合わせ
       } else {
         $('.submit_check').prop('disabled', false);
         $('.submit_check').css('opacity', 1);
+        $('.submit_check').css('cursor', 'pointer');
       }
     });
   });

@@ -1262,12 +1262,16 @@ footer {
 
 /*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ページ共通 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
 
-a:hover {
+a:hover, .check_btn:hover {
   opacity: 0.8;
 }
 
-.common_button:hover {
+.common_button:hover, .check_btn:hover {
   transform: translateY(2px);
+}
+
+.check_btn {
+  cursor: pointer;
 }
 
 .background_other {
