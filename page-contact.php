@@ -24,7 +24,7 @@ Template Name: お問い合わせ
   <h2>無料問い合わせフォーム</h2>
 </div>
 
-<?php echo do_shortcode('[mwform_formkey key="24"]') ?>
+<?php echo do_shortcode('[mwform_formkey key="29"]') ?>
 
 <hr>
 
