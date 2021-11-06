@@ -150,7 +150,6 @@ nav.globalMenuSp {
 
 @media (min-width:770px) {
   nav.globalMenuSp {
-    width: 70%;
     font-size: 1.6rem;
     padding: 60px 20px 0 25px;
   }
