@@ -3,7 +3,7 @@
 .privacy_def {
   padding: 30px 0 20px;
   text-align: center;
-  font: normal normal bold 14px/24px Noto Sans CJK JP, sans-serif;
+  font: normal normal normal 14px/24px Noto Sans CJK JP, sans-serif;
   letter-spacing: 0.8px;
   color: #2E2E2E;
   width: 90%;
@@ -18,7 +18,7 @@
   .privacy_def {
     width: 100%;
     padding: 40px 0 30px;
-    font: normal normal bold 14px/32px Noto Sans CJK JP, sans-serif;
+    font: normal normal normal 14px/32px Noto Sans CJK JP, sans-serif;
   }
   .privacy_def br {
     display: block;

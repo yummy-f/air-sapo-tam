@@ -24,7 +24,7 @@ Template Name: TAM日記
   <?php
   $args = array(
     'post_type' => 'post',
-    'posts_per_page' => 1,
+    'posts_per_page' => 2,
     'paged' => $paged
   );
   $event_query = new WP_Query($args);

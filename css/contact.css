@@ -152,9 +152,6 @@
 }
 
 @media (min-width:1050px) {
-  .small_title {
-    font-size: 16px;
-  }
   .small_title br {
     display: none;
   }
@@ -177,6 +174,10 @@
     width: 733px;
     margin: 27px 52px;
   }
+}
+
+.contact_form_items input, .contact_form_items textarea {
+  padding: 10px;
 }
 
 .mwform-radio-field-text {
@@ -218,7 +219,7 @@
   }
   .form2 .mwform-radio-field {
     width: 150px;
-    margin-bottom: 19px!important;
+    margin-bottom: 10px!important;
   }
   .form1, .form2 {
     margin-bottom: 8px;
@@ -292,13 +293,15 @@
 /*------------------------------------ 個人情報について --------------------------------------*/
 
 .check_privacy {
-  margin-top: 55px;
-  text-align: center;
+  margin: 55px auto 0;
+  text-align: left;
+  width: 80%;
 }
 
 .check_privacy h3 {
   font: normal normal normal 16px/26px Noto Sans CJK JP, sans-serif;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .check_privacy p {
@@ -337,19 +340,27 @@
 }
 
 @media (min-width:770px) {
-  .check_privacy_content {
+  .check_privacy_content, .check_privacy {
     width: 500px;
   }
 }
 
 @media (min-width:1050px) {
-  .check_privacy_content {
+  .check_privacy_content, .check_privacy {
     width: 780px;
   }
 }
 
+
 .check_privacy_content div {
-  margin: 24px 0 0 22px;
+  margin: 24px 22px 0;
+  width: 90%;
+}
+
+@media (min-width:770px) {
+  .check_privacy_content div {
+    width: 95%;
+  }
 }
 
 .check_privacy_content h1 {
@@ -478,7 +489,7 @@
   font: normal normal normal 18px Noto Sans CJK JP, sans-serif;
   letter-spacing: 1.2px;
   color: #FFFFFF;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
 }
 
 @media (min-width:770px) {
@@ -486,7 +497,7 @@
     width: 280px;
     height: 70px;
     font-size: 20px;
-    margin-bottom: 80px;
+    margin: 0 0 80px;
   }
 }
 

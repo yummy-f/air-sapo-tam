@@ -135,10 +135,6 @@ nav.globalMenuSp {
   width: 70%;
   font-size: 1rem;
   color: #4A4A4A;
-  /* display: none; */
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
   opacity: 0.8;
   background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
@@ -1266,7 +1262,7 @@ a:hover, .check_btn:hover {
   opacity: 0.8;
 }
 
-.common_button:hover, .check_btn:hover {
+.common_button:hover, .check_btn:hover, .back_button:hover {
   transform: translateY(2px);
 }
 

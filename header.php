@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.7/css/font-awesome.min.css">
     <!-- 初期化 -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/app.css">
