@@ -5,17 +5,12 @@
     <div>
       <a href="/"><img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a>
     </div>
-      <ul class="footer_menu1">
-      <li><a href="/">HOME</a></li>
-      <li><a href="">事業内容</a></li>
-      <li><a href="tam_diary">TAM日記</a></li>
-    </ul>
-    <ul class="footer_menu2">
-      <li class="footer_menu2_li1"><a href="">物件のオーナー様へ</a></li>
-      <li><a href="contact">お問い合わせ</a></li>
-      <li><a href="privacy_policy">プライバシーポリシー</a></li>
-      <li><a href="company">会社概要</a></li>
-    </ul>
+    <nav class="footer_menu1">
+      <?php wp_nav_menu(array('theme_location' => 'footer1-navigation')); ?>
+    </nav>
+    <nav class="footer_menu2">
+      <?php wp_nav_menu(array('theme_location' => 'footer2-navigation')); ?>
+    </nav>
   </div>
 
   <hr>
