@@ -15,7 +15,7 @@ Template Name: インタビュー
 </div>
 
 <div class="subtitle">
-  <p>HOME インタビュー　平木真由子</p>
+  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>インタビュー<i class="fas fa-chevron-right fa-fw"></i>平木真由子</p>
 </div>
 
 <div class="interview_container">

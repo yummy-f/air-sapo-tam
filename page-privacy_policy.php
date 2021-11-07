@@ -15,7 +15,7 @@ Template Name: プライバシーポリシー
 </div>
 
 <div class="subtitle">
-  <p>HOME プライバシーポリシー</p>
+  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>プライバシーポリシー</p>
 </div>
 
 
