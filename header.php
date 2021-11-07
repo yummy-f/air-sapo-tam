@@ -48,15 +48,7 @@
             </div>
 
             <nav class="globalMenuSp">
-                <ul>
-                    <li><a href="#">事業内容</a></li>
-                    <li><a href="#">インタビュー</a></li>
-                    <li><a href="#">管理事例</a></li>
-                    <li><a href="tam_diary">TAM日記</a></li>
-                    <li><a href="company">会社概要</a></li>
-                    <li><a href="contact">お問い合わせ無料</a></li>
-                    <li><a href="#">03-6453-6656（無料）</a></li>
-                </ul>
+                <?php wp_nav_menu(array('theme_location' => 'header-navigation')); ?>
             </nav>
         </div>
     </header>

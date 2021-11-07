@@ -293,7 +293,7 @@
 /*------------------------------------ 個人情報について --------------------------------------*/
 
 .check_privacy {
-  margin: 55px auto 0;
+  margin: 55px auto 10px;
   text-align: left;
   width: 80%;
 }
@@ -337,11 +337,13 @@
   overflow-y: scroll;
   border: 1px solid #AEAEAE;
   padding-bottom: 20px;
+  font-size: 12px;
 }
 
 @media (min-width:770px) {
   .check_privacy_content, .check_privacy {
     width: 500px;
+    font-size: 14px;
   }
 }
 
@@ -357,7 +359,7 @@
   width: 90%;
 }
 
-@media (min-width:770px) {
+@media (min-width:1050px) {
   .check_privacy_content div {
     width: 95%;
   }
@@ -368,6 +370,7 @@
   font: normal normal bold 14px Noto Sans CJK JP, sans-serif;
   letter-spacing: 0.8px;
   color: #2E2E2E;
+  margin-bottom: 5px;
 }
 
 .check_privacy_content p, .check_privacy_content ol {
@@ -513,8 +516,15 @@
 /*------------------------------------ 確認ページ --------------------------------------*/
 
 .mw_wp_form_confirm .check_btn {
+  width: 150px;
+  height: 40px;
+}
+
+@media (min-width:520px) {
+.mw_wp_form_confirm .check_btn {
   width: 200px;
   height: 50px;
+}
 }
 
 .check_btn_div {
@@ -569,6 +579,10 @@
 
 .mw_wp_form_confirm .check_btn_div p:first-child, .mw_wp_form_confirm .check_privacy, .mw_wp_form_confirm .check_privacy_content, .mw_wp_form_confirm .privacy_check, .mw_wp_form_confirm .privacy_check_p {
   display: none;
+}
+
+.mw_wp_form_preview .contact_textarea {
+  padding: 10px 0;
 }
 
 /*------------------------------------ OKページ --------------------------------------*/
