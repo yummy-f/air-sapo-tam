@@ -1,0 +1,88 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ interview ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.interview_container {
+  width: 80%;
+  max-width: 981px;
+  margin: 0 auto;
+}
+
+
+/*------------------------------------ INTERVIEW TOP --------------------------------------*/
+
+.interview_top_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 98px auto 100px;
+}
+
+.interview_top_box_img {
+  width: 45.87%;
+  max-width: 450px;
+  margin: 0 3.88% 0 0;
+}
+
+.interview_top_box_introduction {
+  width: 50.15%;
+  max-width: 492px;
+}
+
+.interview_top_box_introduction p{
+  color: #FF5555;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2.44%;
+}
+
+.interview_top_box_introduction h2 {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2E2E2E;
+  border-bottom: 2px solid #E7E7E7;
+  margin-bottom: 7.85%;
+}
+
+.interview_top_box_introduction span {
+  color: #E7E7E7;
+  margin-left: 5%;
+}
+
+.interview_top_box_introduction h3 {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2E2E2E;
+  margin-left: 13%;
+}
+
+
+/*------------------------------------ INTERVIEW 01 --------------------------------------*/
+
+.interview_01_cont {
+  width: 100%;
+  height: 65px;
+  background-color: #E7E7E7;
+  
+}
+
+.interview_01_cont_title {
+  display: flex;
+}
+
+.interview_01_cont_title_text {
+  color: #2E2E2E;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 18px;
+  line-height: 65px;
+}
+
+.interview_01_cont_title_num {
+  color: #FF9494;
+  font-family: "Ten Mincho", sans-serif;
+  font-size: 30px;
+  margin-right: 13px;
+  line-height: 65px;
+  margin-left: 1.73%;
+}
