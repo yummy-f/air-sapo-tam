@@ -167,11 +167,8 @@ Template Name: インタビュー
       </div>
     </div>
   </section>
-
-
-
-
 </div>
 
+<hr>
 
 <?php get_footer(); ?>

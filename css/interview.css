@@ -308,6 +308,12 @@
   width: 100%;
 }
 
+@media (min-width:680px) {
+  .interview_04_cont_box_flex_left img {
+    margin-top: 12px;
+  }
+}
+
 .interview_04_cont_box_flex_right {
   width: 100%;
   color: #2E2E2E;
