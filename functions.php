@@ -29,6 +29,7 @@ function create_post_type()
             'public' => true,
             'menu_position' => 5,
             'menu_icon'     => 'dashicons-edit', // メニューで使用するアイコン
+            'supports' => array('title','editor','thumbnail') // アイキャッチ画像
         )
     );
 }
