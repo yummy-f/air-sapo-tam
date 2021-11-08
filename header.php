@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/privacy_policy.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsy2knc.css">
 
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 

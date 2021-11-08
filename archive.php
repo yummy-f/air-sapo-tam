@@ -15,7 +15,7 @@ Template Name: TAM日記
 </div>
 
 <div class="subtitle">
-  <p>HOME TAM日記一覧</p>
+  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>TAM日記一覧</p>
 </div>
 
 
