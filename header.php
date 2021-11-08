@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/contact.css">
     <!-- インタビュー -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/interview.css">
+    <!-- 事業内容 -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/service.css">
     <!-- プライバシーポリシー -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/privacy_policy.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsy2knc.css">
