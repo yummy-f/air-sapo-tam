@@ -7,7 +7,7 @@
 </div>
 
 <div class="subtitle">
-  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>TAM日記一覧</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>TAM日記一覧</p>
 </div>
 
 <!-------------------------------- blog記事 ----------------------------------->

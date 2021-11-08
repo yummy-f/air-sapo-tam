@@ -83,7 +83,7 @@ Template Name: トップページ
       <h3>常に時代の変化を感じて<br>新たな不動産活用を</h3>
       <p>ご所有不動産の収益最大化を一緒に目指し、<br>日々時代の流れに敏感になり皆様にとって最適な不動産経営となるよう最後のご依頼の管理会社となるよう精進してまいります。
       </p>
-      <a class="common_button" href="">MORE</a>
+      <a class="common_button" href="interview">MORE</a>
     </div>
   </div>
 </div>

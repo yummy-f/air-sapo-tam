@@ -29,13 +29,18 @@ function create_post_type()
             'public' => true,
             'menu_position' => 5,
             'menu_icon'     => 'dashicons-edit', // メニューで使用するアイコン
-            'supports' => array('title','editor','thumbnail') // アイキャッチ画像
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail', // アイキャッチ画像
+                'custom-fields', //カスタムフィールド
+            )
         )
     );
 }
 
 
-// カスタムタクソノミーの追加
+// カスタムタクソノミー（カテゴリ）の追加
 function add_custom_taxonomy()
 {
     // 制作実績(カテゴリー)
@@ -45,16 +50,6 @@ function add_custom_taxonomy()
         array(            // 3.オプション
             'label' => 'カテゴリー', // タクソノミーの表示名
             'hierarchical' => true, // 階層を持たせるかどうか
-            'public' => true, // 利用する場合はtrueにする
-        )
-    );
-    // 制作実績(タグ)
-    register_taxonomy(
-        'case_study-tag', // 1.タクソノミーの名前
-        'case_study',     // 2.利用する投稿タイプ
-        array(       // 3.オプション
-            'label' => 'タグ', // タクソノミーの表示名
-            'hierarchical' => false, // 階層を持たせるかどうか
             'public' => true, // 利用する場合はtrueにする
         )
     );
@@ -70,3 +65,35 @@ function register_menu()
     register_nav_menu('footer1-navigation', __('footer1-navigation Menu', 'theme-slug'));
     register_nav_menu('footer2-navigation', __('footer2-navigation Menu', 'theme-slug'));
 }
+
+// 管理事例一覧にカテゴリ名を表示
+function add_custom_column($column)
+{
+    // global $post_type;
+    // if( $post_type === 'case_study' ){
+    $column['case_study-category'] = 'カテゴリ';
+    // }
+    return $column;
+}
+add_filter('manage_posts_columns', 'add_custom_column');
+
+function add_custom_column_id($column_name, $id)
+{
+    if ($column_name === 'case_study-category') {
+        echo get_the_term_list($id, 'case_study-category', '', ', ');
+    }
+}
+add_action('manage_case_study_posts_custom_column', 'add_custom_column_id', 10, 2);
+
+// 順番変更（カスタム投稿一覧でのカラムの表示順）
+function sort_custom_columns($columns)
+{
+    $columns = array(
+        'cb'     => '<input type="checkbox" />',
+        'title' => 'タイトル',
+        'case_study-category'   => 'カテゴリー',
+        'date'   => '日時'
+    );
+    return $columns;
+}
+add_filter('manage_case_study_posts_columns', 'sort_custom_columns');

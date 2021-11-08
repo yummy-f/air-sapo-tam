@@ -15,7 +15,7 @@ Template Name: プライバシーポリシー
 </div>
 
 <div class="subtitle">
-  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>プライバシーポリシー</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>プライバシーポリシー</p>
 </div>
 
 

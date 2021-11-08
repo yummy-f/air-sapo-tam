@@ -16,7 +16,7 @@ Template Name: 事業内容
 </div>
 
 <div class="subtitle">
-  <p>HOME 事業内容</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>事業内容</p>
 </div>
 
 <div class="service_container">

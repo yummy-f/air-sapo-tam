@@ -15,7 +15,7 @@ Template Name: インタビュー
 </div>
 
 <div class="subtitle">
-  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>インタビュー<i class="fas fa-chevron-right fa-fw"></i>平木真由子</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i><a href="interview">インタビュー</a><i class="fas fa-chevron-right fa-fw"></i>平木万由子</p>
 </div>
 
 <div class="interview_container">
@@ -28,7 +28,7 @@ Template Name: インタビュー
       </div>
       <div class="interview_top_box_introduction">
         <p>会社紹介インタビュー</p>
-        <h2>平木 真由子 <span>Mayuko Hiraki</span></h2>
+        <h2>平木　万由子 <span>Mayuko Hiraki</span></h2>
         <h3>常に時代の変化を感じて<br>新たな不動産活用を</h3>
       </div>
     </div>
