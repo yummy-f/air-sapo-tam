@@ -49,6 +49,7 @@
   text-align: center;
   color: #2E2E2E;
   font-family: "Noto Sans CJK JP", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   margin-top: 40px;
@@ -85,16 +86,18 @@
   height: 1600px;
   background-color: #E7E7E7;
   padding: 35px 0 0 0;
+  margin-bottom: 40px;
 }
 
 @media (min-width:800px) {
   .service_plan {
     height: 1038px;
     padding: 86px 0 0 0;
+    margin-bottom: 80px;
   }
 }
 
-.service_plan h1 {
+.service_title {
   font-family: "Noto Sans CJK JP", sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -104,7 +107,7 @@
 }
 
 @media (min-width:800px) {
-  .service_plan h1 {
+  .service_title {
     font-size: 22px;
     margin: 0 auto 76px;
   }
@@ -295,3 +298,157 @@
     width: 47.589%;
   }
 }
+
+/*------------------------------------ PM --------------------------------------*/
+
+.pm_bm_toptext {
+  text-align: center;
+  color: #2E2E2E;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+@media (min-width:520px) {
+  .pm_bm_toptext {
+    font-size: 14px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width:800px) {
+  .pm_bm_toptext {
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.7px;
+  }
+}
+
+.pm_bm_box {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto 80px;
+  flex-wrap: wrap;
+  border-bottom: none;
+  border-left: none;
+}
+
+@media (min-width:985px) {
+  .pm_bm_box {
+    width: 981px;
+    border-bottom: 1px solid #A5A5A5;
+    border-left: 1px solid #A5A5A5;
+  }
+}
+
+.pm_bm_box_module {
+  display: flex;
+  justify-content: space-between;
+  width: 326px;
+  height: 120px;
+  border-top: 1px solid #A5A5A5;
+  border-right: 1px solid #A5A5A5;
+  border-bottom: 1px solid #A5A5A5;
+  border-left: 1px solid #A5A5A5;
+  margin: 10px;
+}
+
+@media (min-width:985px) {
+  .pm_bm_box_module {
+    display: flex;
+    justify-content: space-between;
+    width: 326px;
+    height: 120px;
+    border-top: 1px solid #A5A5A5;
+    border-right: 1px solid #A5A5A5;
+    border-bottom: none;
+    border-left: none;
+    margin: 0;
+  }
+}
+
+.pm_bm_box_module img {
+  width: 81px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  margin: 6% 0 0 4%;
+}
+
+.pm_bm_box_module p {
+  width: 56.88%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #2E2E2E;
+  line-height: 30px;
+}
+
+/*------------------------------------ 対応エリア --------------------------------------*/
+
+.cover_box {
+  width: 95%;
+  display: block;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+@media (min-width:500px) {
+  .cover_box {
+    width: 95%;
+    display: flex;
+    margin: 0 auto 50px;
+  }
+}
+
+@media (min-width:985px) {
+  .cover_box {
+    width: 981px;
+    display: flex;
+    margin: 0 auto 97px;
+  }
+}
+
+.cover_box img {
+  margin: 0 auto 20px;
+  width: 70%;
+  height: auto;
+  max-width: 425px;
+  text-align: center;
+}
+
+@media (min-width:500px) {
+  .cover_box img {
+    margin: 0 32px 0 0;
+    width: 60%;
+    height: auto;
+    max-width: 425px;
+    text-align: left;
+  }
+}
+
+@media (min-width:750px) {
+  .cover_box img {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0 64px 0 0;
+    max-width: 425px;
+  }
+}
+
+.cover_box p {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 14px;
+  color: #2E2E2E;
+}
+
+@media (min-width:985px) {
+  .cover_box p {
+    font-size: 16px;
+  }
