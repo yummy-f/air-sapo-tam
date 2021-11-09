@@ -7,7 +7,7 @@
 </div>
 
 <div class="subtitle">
-  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>TAM日記一覧</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>TAM日記</p>
 </div>
 
 <!-------------------------------- blog記事 ----------------------------------->
@@ -26,7 +26,7 @@
       <?php the_post_thumbnail("", array()); ?>
     <?php endif; ?>
   </div>
-  <div class="blog_text"><?php the_content(); ?></div>
+  <div class="blog_text"><p><?php the_content(); ?></p></div>
 <?php endwhile; ?>
 <?php else : ?>
   <!-- 投稿データが取得できない場合の処理 -->
@@ -59,21 +59,5 @@
 </div>
 
 </div>
-
-<!-------------------------------- jquery ----------------------------------->
-
-<script>
-  $(function() {
-    $('.hamburger').click(function() {
-      $(this).toggleClass('active');
-
-      if ($(this).hasClass('active')) {
-        $('.globalMenuSp').addClass('active');
-      } else {
-        $('.globalMenuSp').removeClass('active');
-      }
-    });
-  });
-</script>
 
 <?php get_footer(); ?>

@@ -45,7 +45,7 @@ Template Name: 会社概要
       <div class="company_informatino_row">
         <p class="information_title">所在地</p>
         <div class="information_details">
-          <p>東京都港区芝4 ‐ 3 ‐ 11　VORT三田駅前3階</p>
+          <p>東京都港区芝4-3-11　VORT三田駅前3階</p>
         </div>
       </div>
     </li>

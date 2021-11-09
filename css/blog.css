@@ -83,7 +83,8 @@
 
 .blog_text p {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 2.25;
 }
 
 @media (min-width:770px) {
