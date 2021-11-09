@@ -1254,12 +1254,12 @@ footer {
 
 .footer_menu1 div, .footer_menu2 div{
   margin-right: 0;
-  height: 230px;
+  height: 170px;
 }
 
 @media (min-width:770px) {
   .footer_menu1 div, .footer_menu2 div{
-    height: 300px;
+    height: 240px;
   }
 }
 
@@ -1371,4 +1371,8 @@ a:hover, .check_btn:hover {
   .subtitle p {
     width: 979.5px;
   }
+}
+
+.subtitle a {
+  color: black;
 }

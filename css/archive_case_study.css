@@ -1,0 +1,44 @@
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 管理事例 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.case_content {
+  width: 980px;
+  border: 1px solid #a5a5a5;
+  margin: 0 auto 71px;
+}
+
+.case_category {
+height: 62px;
+background: #e7e7e7;
+opacity: 0.9;
+font-family: "Noto Sans CJK JP", sans-serif;
+font-weight: 500;
+font-size: 18px;
+line-height: 36px;
+text-align: left;
+color: #f55;
+display: flex;
+align-items: center;
+padding-left: 20px;
+}
+
+.case_frame {
+  width: 92%;
+  padding: 55px 0 63px;
+  margin: auto;
+}
+
+.case_content_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.case_content_top figure {
+  width: 425px;
+}
+
+.case_content_top figure img{
+}
+
+.case_content_title_area {
+  width: 425px;
+}

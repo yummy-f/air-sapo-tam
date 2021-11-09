@@ -15,7 +15,7 @@ Template Name: 会社概要
 </div>
 
 <div class="subtitle">
-  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>会社概要</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>会社概要</p>
 </div>
 
 

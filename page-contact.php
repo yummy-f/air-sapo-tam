@@ -15,7 +15,7 @@ Template Name: お問い合わせ
 </div>
 
 <div class="subtitle">
-  <p>HOME<i class="fas fa-chevron-right fa-fw"></i>お問い合わせ</p>
+  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>お問い合わせ</p>
 </div>
 
 
