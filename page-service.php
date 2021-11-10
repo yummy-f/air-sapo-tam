@@ -45,6 +45,11 @@ Template Name: 事業内容
         <h4>サブリースプラン</h4>
         <p>オーナー様から弊社が物件を一括<br>で借り上げ、毎月決まった賃料を<br>オーナー様に送金いたします。</p>
         <a href="#">READ MORE </a>
+        <div class="modal-panel-back disable">
+          <div class="modal-panel">
+            <h1 class="service_title">サブリースプラン</h1>
+          </div>
+        </div>
       </div>
 
       <div class="service_plan_flex_box01">
@@ -73,7 +78,7 @@ Template Name: 事業内容
       <div class="service_plan_flex_box02">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service05.png" alt="">
         <h4>募集媒介プラン</h4>
-        <p>オーナー様から弊社が募集業務を専任<br>で請け負います。更新時の手続き代行<br>や退去立ち合い業務もスポットで請負可能です。</p>
+        <p>オーナー様から弊社が募集業務を<br>専任で請け負います。更新時の手続き代行や退去立ち合い業務もスポットで請負可能です。</p>
         <a href="#">READ MORE </a>
       </div>
     </div>

@@ -213,6 +213,7 @@
     width: 273px;
     font-size: 16px;
     padding: 0%;
+    letter-spacing: 1.5;
   }
 }
 
@@ -401,6 +402,7 @@
     width: 95%;
     display: flex;
     margin: 0 auto 50px;
+    text-align: left;
   }
 }
 
@@ -451,4 +453,5 @@
 @media (min-width:985px) {
   .cover_box p {
     font-size: 16px;
+  }
   }

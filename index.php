@@ -28,6 +28,7 @@ Template Name: トップページ
   <h1>常に最大収益化を一緒に目指す賃貸経営</h1>
 
   <div class="top_white_mobile">
+    
     <img class="top_white_universe_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
     <a class="common_button_mobile common_button" href="">CLICK</a>
@@ -97,28 +98,28 @@ Template Name: トップページ
     <div class="flow_icon">
       <span class="flow_icon_number">01</span>
       <div class="icon_box">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/flow01.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/flow01.png" alt="">
       </div>
       <p class="flow_constract">お問い合わせ</p>
     </div>
     <div class="flow_icon">
       <span class="flow_icon_number">02</span>
       <div class="icon_box">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/flow02.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/flow02.png" alt="">
       </div>
       <p class="flow_constract">物件調査・査定<br>各種お見積り</p>
     </div>
     <div class="flow_icon">
       <span class="flow_icon_number">03</span>
       <div class="icon_box">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/flow03.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/flow03.png" alt="">
       </div>
       <p class="flow_constract">ご契約</p>
     </div>
     <div class="flow_icon">
       <span class="flow_icon_number">04</span>
       <div class="icon_box">
-      <img src="<?php echo get_template_directory_uri(); ?>/image/flow04.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/image/flow04.png" alt="">
       </div>
       <p class="flow_constract">入居募集<br>管理業務開始</p>
     </div>
