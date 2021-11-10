@@ -7,22 +7,22 @@
 }
 
 .case_category {
-height: 62px;
-background: #e7e7e7;
-opacity: 0.9;
-font-family: "Noto Sans CJK JP", sans-serif;
-font-weight: 500;
-font-size: 18px;
-line-height: 36px;
-text-align: left;
-color: #f55;
-display: flex;
-align-items: center;
-padding-left: 20px;
+  height: 62px;
+  background: #e7e7e7;
+  opacity: 0.9;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: left;
+  color: #f55;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .case_frame {
-  width: 92%;
+  width: 95%;
   padding: 55px 0 63px;
   margin: auto;
 }
@@ -30,15 +30,87 @@ padding-left: 20px;
 .case_content_top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 44px;
 }
 
 .case_content_top figure {
   width: 425px;
 }
 
-.case_content_top figure img{
+.case_content_title_area {
+  width: 465px;
 }
 
-.case_content_title_area {
-  width: 425px;
+.case_content_title {
+  color: #2e2e2e;
+  margin-bottom: 22px;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: left;
+  font-weight: bold;
 }
+
+.case_property {
+  margin-top: 18px;
+  display: flex;
+}
+
+.case_property_title {
+  margin-right: 22px;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  color: #2e2e2e;
+}
+
+.case_property p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #2e2e2e;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+.case_frame h4 {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: left;
+  color: #2e2e2e;
+}
+
+.case_status {
+  margin-bottom: 34px;
+}
+
+.case_status h4 {
+  margin: 0 0 14px -10px;
+}
+
+.case_property p {
+  /* font-size: 18px; */
+  font-family: "Noto Sans CJK JP", sans-serif;
+  text-align: left;
+  color: #2e2e2e;
+}
+
+.case_suggest_result {
+  background: #f9f9f9;
+  padding: 24px;
+}
+
+.case_suggest_result h4 {
+  margin: 0 0 14px -10px;
+}
+
+.case_red_arrow {
+  margin: 16px 0;
+  text-align: center;
+}
+
+
+

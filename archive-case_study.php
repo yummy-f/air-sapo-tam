@@ -69,8 +69,8 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
                 <h1 class="case_content_title"><?php echo get_the_title($tax_post->ID); ?></h1>
                 <hr>
 
-                <div>
-                  <h3 class="case_property">物件概要</h3>
+                <div class="case_property">
+                  <h3 class="case_property_title">物件概要</h3>
                   <div>
                     <!-- 所在地 -->
                     <p>所在地：<?php echo get_post_meta($tax_post->ID, 'case_address', true); ?></p>
@@ -85,14 +85,21 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
             </div>
 
             <!-- 受託前の状況 -->
-            <h4>【管理受託前の状況】</h4>
-            <p><?php echo get_post_meta($tax_post->ID, 'case_status', true); ?></p>
+            <div class="case_status">
+              <h4>【管理受託前の状況】</h4>
+              <p><?php echo get_post_meta($tax_post->ID, 'case_status', true); ?></p>
+            </div>
             <!-- ご提案 -->
-            <h4>【ご提案】</h4>
-            <p><?php echo get_post_meta($tax_post->ID, 'case_suggest', true); ?></p>
+            <div class="case_suggest_result">
+              <h4>【ご提案】</h4>
+              <p><?php echo get_post_meta($tax_post->ID, 'case_suggest', true); ?></p>
+            </div>
+            <figure class="case_red_arrow"><img src="<?php echo get_template_directory_uri(); ?>/image/case_red_arrow.png" alt=""></figure>
             <!-- 結果 -->
-            <h4>【結果】</h4>
-            <p><?php echo get_post_meta($tax_post->ID, 'case_result', true); ?></p>
+            <div class="case_suggest_result">
+              <h4>【結果】</h4>
+              <p><?php echo get_post_meta($tax_post->ID, 'case_result', true); ?></p>
+            </div>
           </div>
         </section>
       <?php endforeach;
@@ -107,7 +114,9 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
 <?php endif; ?>
 
 
-
+<input id="g1" checked="checked" name="radio01" type="radio" /><label class="radio01" for="g1">リンゴ</label>
+<input id="g2" name="radio01" type="radio" /><label class="radio01" for="g2">ミカン</label>
+<input id="g3" name="radio01" type="radio" /><label class="radio01" for="g3">バナナ</label>
 
 <hr>
 

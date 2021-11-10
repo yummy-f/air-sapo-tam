@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-p, h1, h2, h3, ul, hr, ol, figure{
+p, h1, h2, h3, h4, ul, hr, ol, figure{
     margin: 0;
     padding: 0;
 }
