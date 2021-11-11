@@ -15,7 +15,7 @@
 
   <hr>
 
-  <p class="copy_write">&copy; 2021 Three Arrows Management</p>
+  <p class="copy_write">&copy; 2021 Three Arrows Management All rights reserved.</p>
 </footer>
 
 <?php wp_footer(); ?>

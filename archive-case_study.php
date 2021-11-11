@@ -25,15 +25,36 @@ Template Name: 管理事例
 <input type="button" value="B" onclick="changeCategory('B');" />
 <input type="button" value="C" onclick="changeCategory('C');" />
 <input type="button" value="D" onclick="changeCategory('D');" />
+<input type="button" value="test" onclick="change();" />
 
 <script>
-function changeCategory(category) {
-  if (category == 'ALL') {
-    <?php $taxonomys = ['A', 'B', 'C', 'D']; ?>
-  } else {
-    <?php $taxonomys = ['category']; ?>
-  }
+// window.addEventListener('DOMContentLoaded', function () {
+  window.onload = function(){
+  // var cat = localStorage.getItem("category");
+  // if (true) {
+  //   "<?php $taxonomys = ['minpaku']; ?>"
+  // } else {
+  //   "<?php $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace']; ?>"
+  // }
+  // alert('javascript');
 }
+// )
+
+  function changeCategory(category) {
+    localStorage.setItem('category', category);
+    // if (category == 'ALL') {
+    //   <?php $taxonomys = ['A', 'B', 'C', 'D']; ?>
+    // } else {
+    //   <?php $taxonomys = ['category']; ?>
+    // }
+  }
+
+  function change() {
+    var cat = localStorage.getItem("category");
+    var test = "<?php echo "testtttt"; ?>"
+    console.log(cat)
+    console.log(test)
+  }
 </script>
 
 <?php
@@ -42,8 +63,9 @@ $post_type = 'case_study'; // カスタム投稿のスラッグ名を入れる
 $args = array(
   'order'        => 'DESC',
 );
+echo $taxonomys;
+echo $taaa;
 $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
-
 if (!is_wp_error($taxonomys) && count($taxonomys)) :
   foreach ($taxonomys as $taxonomy) :
     $tax_posts = get_posts(array(
