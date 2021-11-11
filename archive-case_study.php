@@ -20,7 +20,21 @@ Template Name: 管理事例
 
 
 <!------------------------------- 管理事例詳細 -------------------------------------->
-<input type="button" value="このページを再読込します" onclick="window.location.reload();" />
+<input type="button" value="ALL" onclick="changeCategory('ALL');" />
+<input type="button" value="A" onclick="changeCategory('A');" />
+<input type="button" value="B" onclick="changeCategory('B');" />
+<input type="button" value="C" onclick="changeCategory('C');" />
+<input type="button" value="D" onclick="changeCategory('D');" />
+
+<script>
+function changeCategory(category) {
+  if (category == 'ALL') {
+    <?php $taxonomys = ['A', 'B', 'C', 'D']; ?>
+  } else {
+    <?php $taxonomys = ['category']; ?>
+  }
+}
+</script>
 
 <?php
 $taxonomy_name = 'case_study-category'; // タクソノミーのスラッグ名を入れる
@@ -28,7 +42,7 @@ $post_type = 'case_study'; // カスタム投稿のスラッグ名を入れる
 $args = array(
   'order'        => 'DESC',
 );
-$taxonomys = get_terms($taxonomy_name, $args);
+$taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
 
 if (!is_wp_error($taxonomys) && count($taxonomys)) :
   foreach ($taxonomys as $taxonomy) :
@@ -38,9 +52,9 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
       'tax_query' => array(
         array(
           'taxonomy' => $taxonomy_name,
-          'terms' => array($taxonomy->slug),
-          'field' => 'slug',
-          'include_children' => true, //子タクソノミーを含める
+          'field' => 'slug', // スラッグで検索。idでも検索できる
+          'terms' => $taxonomy,
+          'operator' => 'IN', // termsが複数ある場合AND検索（全て）かIN検索（いずれか）かNOT IN（いずれも除く
         )
       )
     ));
@@ -51,7 +65,15 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
 
         <section class="case_content">
           <!-- カテゴリー -->
-          <h2 class="case_category"><?php echo esc_html($taxonomy->name); ?></h2>
+          <?php if ($taxonomy == 'minpaku') : ?>
+            <h2 class="case_category">民泊</h2>
+          <?php elseif ($taxonomy == 'ryokan') : ?>
+            <h2 class="case_category">旅館業</h2>
+          <?php elseif ($taxonomy == 'sharehouse') : ?>
+            <h2 class="case_category">シェアハウス</h2>
+          <?php elseif ($taxonomy == 'rentalspace') : ?>
+            <h2 class="case_category">レンタルスペース</h2>
+          <?php endif ?>
 
           <div class="case_frame">
             <div class="case_content_top">
@@ -112,11 +134,6 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
 <?php else : ?>
   <p>投稿はありません</p>
 <?php endif; ?>
-
-
-<input id="g1" checked="checked" name="radio01" type="radio" /><label class="radio01" for="g1">リンゴ</label>
-<input id="g2" name="radio01" type="radio" /><label class="radio01" for="g2">ミカン</label>
-<input id="g3" name="radio01" type="radio" /><label class="radio01" for="g3">バナナ</label>
 
 <hr>
 
