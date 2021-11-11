@@ -195,7 +195,6 @@
 
 .previouspostslink, .nextpostslink {
   color: #747474;
-  font-weight: bold;
   opacity: 0.32;
 }
 
@@ -226,7 +225,6 @@
 
 @media (min-width:770px) {
   .nextpostslink {
-    font-size: 28px;
     margin-left: 20px;
   }
 }
