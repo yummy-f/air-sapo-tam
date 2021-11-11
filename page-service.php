@@ -44,26 +44,20 @@ Template Name: 事業内容
         <img src="<?php echo get_template_directory_uri(); ?>/image/service01.png" alt="">
         <h4>サブリースプラン</h4>
         <p>オーナー様から弊社が物件を一括<br>で借り上げ、毎月決まった賃料を<br>オーナー様に送金いたします。</p>
-        <a href="#">READ MORE </a>
-        <div class="modal-panel-back disable">
-          <div class="modal-panel">
-            <h1 class="service_title">サブリースプラン</h1>
-          </div>
-        </div>
+        <a class="service_modal_open" href="#">READ MORE </a>
       </div>
-
       <div class="service_plan_flex_box01">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service02.png" alt="">
         <h4>マスターリースプラン</h4>
         <p>オーナー様から弊社が物件を一括<br>で借り上げ、毎月入居率に応じた<br>賃料を送金いたします。</p>
-        <a href="#">READ MORE </a>
+        <a class="service_modal_open" href="#">READ MORE </a>
       </div>
 
       <div class="service_plan_flex_box01">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service03.png" alt="">
         <h4>レベニューシェアプラン</h4>
         <p>約定賃料を上回る成約の場合<br>上振れ分を折半</p>
-        <a href="#">READ MORE </a>
+        <a class="service_modal_open" href="#">READ MORE </a>
       </div>
     </div>
 
@@ -72,17 +66,33 @@ Template Name: 事業内容
         <img src="<?php echo get_template_directory_uri(); ?>/image/service04.png" alt="">
         <h4>集金代行プラン</h4>
         <p>オーナー様から弊社が管理を一括で請け負い。</p>
-        <a href="#">READ MORE </a>
+        <a class="service_modal_open" href="#">READ MORE </a>
       </div>
 
       <div class="service_plan_flex_box02">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service05.png" alt="">
         <h4>募集媒介プラン</h4>
         <p>オーナー様から弊社が募集業務を<br>専任で請け負います。更新時の手続き代行や退去立ち合い業務もスポットで請負可能です。</p>
-        <a href="#">READ MORE </a>
+        <a class="service_modal_open" href="#">READ MORE </a>
       </div>
     </div>
   </div>
+  <div class="service_modal-panel-back disable" id="service_modal_id">
+    <div class="service_modal_panel">
+      <h1 class="service_title">サブリースプラン</h1>
+      <ul class="service_modal_slider">
+        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
+        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
+        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
+        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
+        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
+      </ul>
+      <p class="service_modal_text">オーナー様から弊社が物件を一括で借り上げ、毎月決まった賃料をオーナー様に送金いたします。</p>
+      <a class="service_modal_close" href="#">戻る</a>
+    </div>
+  </div>
+  <!-- </div> -->
+
 </section>
 <!------------------------------- PM -------------------------------------->
 <section class="pm_container">
@@ -197,6 +207,51 @@ Template Name: 事業内容
   </div>
 </section>
 <hr>
+
+
+<!------------------------------- jquery -------------------------------------->
+
+<script>
+  // スライダー
+  $('.service_modal_slider').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  // モーダル
+  $('.service_modal_open').on('click', function() {
+    $('#service_modal_id').removeClass('disable');
+  });
+  // グレー背景で戻る
+  $('.service_modal-panel-back').on('click', function() {
+    $('#service_modal_id').addClass('disable');
+  })
+  // グレー背景以外のクリック無効化
+  $('.service_modal_panel').on('click', function(e) {
+    e.stopPropagation();
+  })
+  // モーダル戻るボタン
+  $('.service_modal_close').on('click', function(e) {
+    $('#service_modal_id').addClass('disable');
+  })
+</script>
 
 
 
