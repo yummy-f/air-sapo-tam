@@ -33,6 +33,11 @@
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="<?php echo get_template_directory_uri() ?>/js/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_template_directory_uri() ?>/js/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/slick.min.js"></script>
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
