@@ -69,7 +69,7 @@ Template Name: トップページ
         </p>
       </li>
     </ul>
-    <a class="strength_more common_button">MORE</a>
+    <a class="strength_more common_button" href="">MORE</a>
   </div>
 </div>
 

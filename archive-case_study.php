@@ -20,40 +20,39 @@ Template Name: 管理事例
 
 
 <!------------------------------- 管理事例詳細 -------------------------------------->
-<input type="button" value="ALL" onclick="changeCategory('ALL');" />
-<input type="button" value="A" onclick="changeCategory('A');" />
-<input type="button" value="B" onclick="changeCategory('B');" />
-<input type="button" value="C" onclick="changeCategory('C');" />
-<input type="button" value="D" onclick="changeCategory('D');" />
-<input type="button" value="test" onclick="change();" />
+<div class="case_button_area">
+  <input id="case_all" class="case_cat_button" type="button" value="ALL" onclick="changeCategory('ALL');" />
+  <input id="case_minpaku" class="case_cat_button" type="button" value="民泊" onclick="changeCategory('minpaku');" />
+  <input id="case_ryokan" class="case_cat_button" type="button" value="旅館業" onclick="changeCategory('ryokan');" />
+  <input id="case_sharehouse" class="case_cat_button" type="button" value="シェアハウス" onclick="changeCategory('sharehouse');" />
+  <input id="case_rentalspace" class="case_cat_button" type="button" value="レンタルスペース" onclick="changeCategory('rentalspace');" />
+</div>
 
 <script>
-// window.addEventListener('DOMContentLoaded', function () {
-  window.onload = function(){
-  // var cat = localStorage.getItem("category");
-  // if (true) {
-  //   "<?php $taxonomys = ['minpaku']; ?>"
-  // } else {
-  //   "<?php $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace']; ?>"
-  // }
-  // alert('javascript');
-}
-// )
+  window.onload = function() {
+    var cat = localStorage.getItem("category");
+    if (cat == 'minpaku') {
+      document.getElementById("case_minpaku").classList.add("active");
+      "<?php $taxonomys = ['minpaku']; ?>"
+    } else if (cat == 'ryokan') {
+      document.getElementById("case_ryokan").classList.add("active");
+      "<?php $taxonomys = ['ryokan']; ?>"
+    } else if (cat == 'sharehouse') {
+      document.getElementById("case_sharehouse").classList.add("active");
+      "<?php $taxonomys = ['sharehouse']; ?>"
+    } else if (cat == 'rentalspace') {
+      document.getElementById("case_rentalspace").classList.add("active");
+      "<?php $taxonomys = ['rentalspace']; ?>"
+    } else {
+      document.getElementById("case_all").classList.add("active");
+      "<?php $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace']; ?>"
+    }
+    localStorage.clear();
+  }
 
   function changeCategory(category) {
     localStorage.setItem('category', category);
-    // if (category == 'ALL') {
-    //   <?php $taxonomys = ['A', 'B', 'C', 'D']; ?>
-    // } else {
-    //   <?php $taxonomys = ['category']; ?>
-    // }
-  }
-
-  function change() {
-    var cat = localStorage.getItem("category");
-    var test = "<?php echo "testtttt"; ?>"
-    console.log(cat)
-    console.log(test)
+    location.reload();
   }
 </script>
 
@@ -63,9 +62,6 @@ $post_type = 'case_study'; // カスタム投稿のスラッグ名を入れる
 $args = array(
   'order'        => 'DESC',
 );
-echo $taxonomys;
-echo $taaa;
-$taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
 if (!is_wp_error($taxonomys) && count($taxonomys)) :
   foreach ($taxonomys as $taxonomy) :
     $tax_posts = get_posts(array(
@@ -157,6 +153,6 @@ if (!is_wp_error($taxonomys) && count($taxonomys)) :
   <p>投稿はありません</p>
 <?php endif; ?>
 
-<hr>
+<hr class="case_hr">
 
 <?php get_footer(); ?>
