@@ -243,11 +243,16 @@
     left: 80%;
   }
 }
-
 @media (min-width:800px) {
   .service_plan_flex_box01 a, .service_plan_flex_box02 a {
+    left: 32%;
+  }
+}
+
+@media (min-width:1000px) {
+  .service_plan_flex_box01 a, .service_plan_flex_box02 a {
     top: 86.7%;
-    left: 37%;
+    left: 40%;
   }
 }
 
