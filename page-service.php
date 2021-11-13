@@ -91,7 +91,6 @@ Template Name: 事業内容
       <a class="service_modal_close" href="#">戻る</a>
     </div>
   </div>
-  <!-- </div> -->
 
 </section>
 <!------------------------------- PM -------------------------------------->
