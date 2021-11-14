@@ -4,6 +4,7 @@ Template Name: 管理事例
 */
 ?>
 
+<?php session_start(); ?>
 
 <?php get_header(); ?>
 
@@ -28,31 +29,64 @@ Template Name: 管理事例
   <input id="case_rentalspace" class="case_cat_button" type="button" value="レンタルスペース" onclick="changeCategory('rentalspace');" />
 </div>
 
+<?php
+$taxonomys = [];
+
+// 初回でない、カテゴリーに値が入っている場合実行される
+if (isset($_POST['category']) && isset($_POST["chkno"]) && isset($_SESSION["chkno"])
+  && ($_POST["chkno"] == $_SESSION["chkno"])) {
+
+  switch ($_POST['category']) {
+    case 'minpaku':
+      $taxonomys = ['minpaku'];
+      break;
+    case 'ryokan':
+      $taxonomys = ['ryokan'];
+      break;
+    case 'sharehouse':
+      $taxonomys = ['sharehouse'];
+      break;
+    case 'rentalspace':
+      $taxonomys = ['rentalspace'];
+      break;
+    default:
+      $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
+  }
+} else {
+  $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
+}
+
+// 乱数を生成して、初回チェックを行う
+$_SESSION["chkno"] = $chkno = mt_rand();
+?>
+
 <script>
   window.onload = function() {
     var cat = localStorage.getItem("category");
+    // ボタンのアクティブ処理
     if (cat == 'minpaku') {
       document.getElementById("case_minpaku").classList.add("active");
-      "<?php $taxonomys = ['minpaku']; ?>"
     } else if (cat == 'ryokan') {
       document.getElementById("case_ryokan").classList.add("active");
-      "<?php $taxonomys = ['ryokan']; ?>"
     } else if (cat == 'sharehouse') {
       document.getElementById("case_sharehouse").classList.add("active");
-      "<?php $taxonomys = ['sharehouse']; ?>"
     } else if (cat == 'rentalspace') {
       document.getElementById("case_rentalspace").classList.add("active");
-      "<?php $taxonomys = ['rentalspace']; ?>"
     } else {
       document.getElementById("case_all").classList.add("active");
-      "<?php $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace']; ?>"
     }
     localStorage.clear();
   }
 
   function changeCategory(category) {
     localStorage.setItem('category', category);
-    location.reload();
+
+    // カテゴリーを設定して画面を再描画する
+    let f = document.createElement('form');
+    f.method = 'post';
+    f.innerHTML = '<input name="chkno" value=' + <?php echo $chkno; ?> + '><input name="category" value=' + category + '>'
+    document.body.append(f);
+    f.submit();
   }
 </script>
 
