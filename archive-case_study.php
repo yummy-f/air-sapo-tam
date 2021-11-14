@@ -32,20 +32,26 @@ Template Name: 管理事例
   window.onload = function() {
     var cat = localStorage.getItem("category");
     if (cat == 'minpaku') {
+      console.log('A');
       document.getElementById("case_minpaku").classList.add("active");
-      "<?php $taxonomys = ['minpaku']; ?>"
+      <?php $taxonomys = ['minpaku']; ?>;
     } else if (cat == 'ryokan') {
+      console.log('B');
       document.getElementById("case_ryokan").classList.add("active");
-      "<?php $taxonomys = ['ryokan']; ?>"
+      <?php $taxonomys = ['ryokan']; ?>;
     } else if (cat == 'sharehouse') {
+      console.log('C');
       document.getElementById("case_sharehouse").classList.add("active");
-      "<?php $taxonomys = ['sharehouse']; ?>"
+      <?php $taxonomys = ['sharehouse']; ?>;
     } else if (cat == 'rentalspace') {
+      console.log('D');
       document.getElementById("case_rentalspace").classList.add("active");
-      "<?php $taxonomys = ['rentalspace']; ?>"
+      <?php $taxonomys = ['rentalspace']; ?>;
     } else {
+      console.log('E');
       document.getElementById("case_all").classList.add("active");
-      "<?php $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace']; ?>"
+      <?php $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace']; ?>;
+      <?php echo $taxonomys ?>;
     }
     localStorage.clear();
   }
