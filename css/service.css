@@ -269,7 +269,7 @@
 }
 
 .service_modal-panel-back.disable {
-  display: none;
+  /* display: none; */
 }
 
 .service_modal_panel {

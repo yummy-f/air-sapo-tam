@@ -634,11 +634,12 @@ nav.globalMenuSp.active {
 }
 
 .top_modal_toppage_box_list01 li {
-  width: 202px;
+  width: 241px;
+  
 }
 
 .top_modal_toppage_box_list01 img {
-  width: 202px;
+  width: 241px;
 }
 
 .top_modal_toppage_box_list02 {
@@ -655,13 +656,85 @@ nav.globalMenuSp.active {
 }
 
 .top_modal_toppage_box_list02 li {
-  width: 202px;
+  width: 241px;
+  
 }
 
 .top_modal_toppage_box_list02 img {
-  width: 202px;
+  width: 241px;
 }
 
+.top_modal_toppage_box_list01_text {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  color: #2E2E2E;
+  margin: 27px auto 0;
+  letter-spacing: 1.7px;
+}
+
+.top_modal_toppage_box_list01_num {
+  /* position: absolute;
+  top: -40px; */
+  font-family: "toppan-bunkyu-mincho-pr6n", serif;
+  font-size: 31px;
+  color: #FF9494;
+  letter-spacing: 1.55px;
+  text-align: left;
+  margin-bottom: -13px;
+}
+
+.fadein01 {
+  animation: slide-skew01 0.6s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+ 
+@keyframes slide-skew01 {
+  0% {
+    transform: translate(980px,30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+  }
+  20%,100% {
+    opacity: 1;
+  }
+}
+
+.fadein02 {
+  animation: slide-skew02 0.6s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+ 
+@keyframes slide-skew02 {
+  0% {
+    transform: translate(980px,-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+  }
+  20%,100% {
+    opacity: 1;
+  }
+}
+
+.fadein03 {
+  animation: slide-skew03 0.9s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+ 
+@keyframes slide-skew03 {
+  0% {
+    transform: translate(-980px,-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+  }
+  20%,100% {
+    opacity: 1;
+  }
+}
 /*------------------------------------ Strengths --------------------------------------*/
 
 .Strengths {

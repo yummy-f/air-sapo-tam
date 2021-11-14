@@ -18,7 +18,7 @@ Template Name: トップページ
     <img class="top_white_back" src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
     <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
-    <a class="common_button service_modal_open" href="">CLICK</a>
+    <a class="common_button service_modal_open" href="#">CLICK</a>
   </div>
 </div>
 
@@ -30,7 +30,7 @@ Template Name: トップページ
   <div class="top_white_mobile">
     <img class="top_white_universe_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
-    <a class="common_button_mobile common_button service_modal_open" href="">CLICK</a>
+    <a class="common_button_mobile common_button service_modal_open" href="#">CLICK</a>
   </div>
 </div>
 <div class="service_modal-panel-back disable" id="service_modal_id">
@@ -39,23 +39,28 @@ Template Name: トップページ
     <h2 class="top_modal_subtitle">5つのできること</h2>
     <div class="top_modal_toppage_box">
       <ul class="top_modal_toppage_box_list01">
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
-          <p>民泊可能物件の管理</p>
+        <li class="fadein01"><a href=""><p class="top_modal_toppage_box_list01_num">01</p><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
+            <p class="top_modal_toppage_box_list01_text">民泊可能物件の管理</p>
+          </a>
         </li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
-          <p>シェアハウスの管理</p>
+        <li class="fadein02"><a href=""><p class="top_modal_toppage_box_list01_num">02</p><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
+        <p class="top_modal_toppage_box_list01_text">シェアハウスの管理</p>
+          </a>
         </li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
-          <p>レンタルスペース可能物件<br>の管理</p>
+        <li class="fadein03"><a href=""><p class="top_modal_toppage_box_list01_num">03</p><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
+        <p class="top_modal_toppage_box_list01_text">レンタルスペース可能物件<br>の管理</p>
+          </a>
         </li>
       </ul>
 
       <ul class="top_modal_toppage_box_list02">
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
-          <p>一般賃貸物件の管理</p>
+        <li class="fadein04"><a href=""><p class="top_modal_toppage_box_list01_num">04</p><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
+        <p class="top_modal_toppage_box_list01_text">一般賃貸物件の管理</p>
+          </a>
         </li>
-        <li><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
-          <p>アパートの1室から管理可能</p>
+        <li class="fadein05"><a href=""><p class="top_modal_toppage_box_list01_num">05</p><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal 02.png" alt="">
+        <p class="top_modal_toppage_box_list01_text">アパートの1室から管理可能</p>
+          </a>
         </li>
       </ul>
     </div>
