@@ -558,6 +558,110 @@ nav.globalMenuSp.active {
   }
 }
 
+/*------------------------------------ モーダル --------------------------------------*/
+
+.service_modal-panel-back {
+  position: fixed;
+  width: 100%;
+  height: 100%;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(200,200,200,.5);
+  z-index: 99;
+}
+
+.service_modal-panel-back.disable {
+  display: none;
+}
+
+.top_modal_panel {
+  width: 80%;
+  max-width: 981px;
+  height: 752px;
+  background-color: white;
+  padding: 30px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.service_modal_close {
+  display: inline-block;
+  color: #fff;
+  background-color: #3D3D3D;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 0 0 8px #707070;
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 16px;
+  margin: 61px auto 51px;
+  text-align: center;
+}
+
+.top_modal_title {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FF2222;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top_modal_subtitle {
+  font-family: "Noto Sans CJK JP", sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 19px auto 70px;
+  text-align: center;
+}
+
+.top_modal_toppage_box {
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.top_modal_toppage_box_list01 {
+  display: flex;
+  width: 806px;
+  height: 278px;
+  padding-left: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.top_modal_toppage_box_list01 li {
+  width: 202px;
+}
+
+.top_modal_toppage_box_list01 img {
+  width: 202px;
+}
+
+.top_modal_toppage_box_list02 {
+  display: flex;
+  width: 530px;
+  height: 258px;
+  padding-left: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.top_modal_toppage_box_list02 li {
+  width: 202px;
+}
+
+.top_modal_toppage_box_list02 img {
+  width: 202px;
+}
+
 /*------------------------------------ Strengths --------------------------------------*/
 
 .Strengths {
