@@ -4,7 +4,9 @@ Template Name: 管理事例
 */
 ?>
 
-<?php session_start(); ?>
+<?php 
+ini_set("session.cookie_secure", 1);
+session_start(); ?>
 
 <?php get_header(); ?>
 
