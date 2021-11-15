@@ -81,13 +81,27 @@ Template Name: 事業内容
     <div class="service_modal_panel">
       <h1 class="service_title">サブリースプラン</h1>
       <ul class="service_modal_slider">
-        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
-        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
-        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
-        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
-        <li class="service_modal_slider_main"><img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt=""></li>
+        <li class="service_modal_slider_main">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt="">
+          <p class="service_modal_text">1毎月決まった賃料をオーナー様に送金いたします。</p>
+        </li>
+        <li class="service_modal_slider_main">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt="">
+          <p class="service_modal_text">2毎月決まった賃料をオーナー様に送金いたします。</p>
+        </li>
+        <li class="service_modal_slider_main">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt="">
+          <p class="service_modal_text">3毎月決まった賃料をオーナー様に送金いたします。</p>
+        </li>
+        <li class="service_modal_slider_main">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt="">
+          <p class="service_modal_text">4毎月決まった賃料をオーナー様に送金いたします。</p>
+        </li>
+        <li class="service_modal_slider_main" id="test01">
+          <img src="<?php echo get_template_directory_uri(); ?>/image/service_modal01.png" alt="">
+          <p class="service_modal_text">5毎月決まった賃料をオーナー様に送金いたします。</p>
+        </li>
       </ul>
-      <p class="service_modal_text">オーナー様から弊社が物件を一括で借り上げ、毎月決まった賃料をオーナー様に送金いたします。</p>
       <a class="service_modal_close" href="#">戻る</a>
     </div>
   </div>
@@ -212,24 +226,19 @@ Template Name: 事業内容
 
 <script>
   // スライダー
-  $('.service_modal_slider').slick({
-    autoplay: true,
+  var slider = $('.service_modal_slider').slick({
+    autoplay: false,
     autoplaySpeed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
+    infinite: true,
     centerMode: true,
+    dots: true,
     responsive: [{
-        breakpoint: 768,
+        breakpoint: 780,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
         }
       }
     ]
@@ -237,6 +246,7 @@ Template Name: 事業内容
   // モーダル
   $('.service_modal_open').on('click', function() {
     $('#service_modal_id').removeClass('disable');
+    slider.slick('setPosition');
   });
   // グレー背景で戻る
   $('.service_modal-panel-back').on('click', function() {

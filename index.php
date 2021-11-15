@@ -18,7 +18,7 @@ Template Name: トップページ
     <img class="top_white_back" src="<?php echo get_template_directory_uri(); ?>/image/white_top.png" alt="">
     <img class="top_white_universe" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
-    <a class="common_button service_modal_open" href="#">CLICK</a>
+    <!-- <a class="common_button service_modal_open" href="#">CLICK</a> -->
   </div>
 </div>
 
@@ -30,7 +30,7 @@ Template Name: トップページ
   <div class="top_white_mobile">
     <img class="top_white_universe_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_universe.png" alt="">
     <img class="top_white_logo_mobile" src="<?php echo get_template_directory_uri(); ?>/image/top_tam.png" alt="">
-    <a class="common_button_mobile common_button service_modal_open" href="#">CLICK</a>
+    <!-- <a class="common_button_mobile common_button service_modal_open" href="#">CLICK</a> -->
   </div>
 </div>
 <div class="service_modal-panel-back disable" id="service_modal_id">
@@ -100,7 +100,7 @@ Template Name: トップページ
         </p>
       </li>
     </ul>
-    <a class="strength_more common_button" href="">MORE</a>
+    <!-- <a class="strength_more common_button" href="">MORE</a> -->
   </div>
 </div>
 
@@ -156,7 +156,7 @@ Template Name: トップページ
     </div>
   </div>
   <div class="more_button">
-    <a class="common_button" href="">MORE</a>
+    <!-- <a class="common_button" href="">MORE</a> -->
   </div>
 </div>
 
