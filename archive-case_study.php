@@ -92,6 +92,7 @@ $_SESSION["chkno"] = $chkno = mt_rand();
     let f = document.createElement('form');
     f.method = 'post';
     f.innerHTML = '<input name="chkno" value=' + <?php echo $chkno; ?> + '><input name="category" value=' + category + '>'
+    console.log(<?php echo $chkno; ?>);
     document.body.append(f);
     f.submit();
   }
