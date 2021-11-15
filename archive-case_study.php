@@ -65,6 +65,8 @@ if (isset($_POST['category']) && isset($_POST["chkno"]) && isset($_SESSION["chkn
 
 // 乱数を生成して、初回チェックを行う
 $_SESSION["chkno"] = $chkno = mt_rand();
+print_r('--------------');
+print_r($_SESSION["chkno"]);
 ?>
 
 <script>
