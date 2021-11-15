@@ -33,6 +33,9 @@ Template Name: 管理事例
 $taxonomys = [];
 
 // 初回でない、カテゴリーに値が入っている場合実行される
+print($_POST["chkno"]);
+print_r($_POST["category"]);
+print_r($_SESSION["chkno"]);
 if (isset($_POST['category']) && isset($_POST["chkno"]) && isset($_SESSION["chkno"])
   && ($_POST["chkno"] == $_SESSION["chkno"])) {
 
