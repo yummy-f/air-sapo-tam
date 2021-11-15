@@ -98,8 +98,11 @@ function sort_custom_columns($columns)
 }
 add_filter('manage_case_study_posts_columns', 'sort_custom_columns');
 
-
-add_action('init', 'session_start1');
-function session_start1(){
-	session_start();
+// sessionの開始
+if (is_page(50)) {
+    add_action('init', 'session_start1');
+    function session_start1()
+    {
+        session_start();
+    }
 }
