@@ -51,9 +51,13 @@ if (isset($_POST['category']) && isset($_POST["chkno"]) && isset($_SESSION["chkn
       break;
     default:
       $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
+      print_r('A');
   }
+  print_r($taxonomys);
 } else {
   $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
+  print_r($taxonomys);
+  print_r('B');
 }
 
 // 乱数を生成して、初回チェックを行う
@@ -91,6 +95,7 @@ $_SESSION["chkno"] = $chkno = mt_rand();
 </script>
 
 <?php
+print_r($taxonomys);
 $taxonomy_name = 'case_study-category'; // タクソノミーのスラッグ名を入れる
 $post_type = 'case_study'; // カスタム投稿のスラッグ名を入れる
 $args = array(
