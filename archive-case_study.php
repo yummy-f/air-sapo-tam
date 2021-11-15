@@ -32,9 +32,6 @@ Template Name: 管理事例
 $taxonomys = [];
 
 // 初回でない、カテゴリーに値が入っている場合実行される
-print($_POST["chkno"]);
-print_r($_POST["category"]);
-print_r($_SESSION["chkno"]);
 if (isset($_POST['category']) && isset($_POST["chkno"]) && isset($_SESSION["chkno"])
   && ($_POST["chkno"] == $_SESSION["chkno"])) {
 
@@ -53,19 +50,13 @@ if (isset($_POST['category']) && isset($_POST["chkno"]) && isset($_SESSION["chkn
       break;
     default:
       $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
-      print_r('A');
   }
-  print_r($taxonomys);
 } else {
   $taxonomys = ['minpaku', 'ryokan', 'sharehouse', 'rentalspace'];
-  print_r($taxonomys);
-  print_r('B');
 }
 
 // 乱数を生成して、初回チェックを行う
 $_SESSION["chkno"] = $chkno = mt_rand();
-print_r('--------------');
-print_r($_SESSION["chkno"]);
 ?>
 
 <script>
@@ -93,14 +84,12 @@ print_r($_SESSION["chkno"]);
     let f = document.createElement('form');
     f.method = 'post';
     f.innerHTML = '<input name="chkno" value=' + <?php echo $chkno; ?> + '><input name="category" value=' + category + '>'
-    console.log(<?php echo $chkno; ?>);
     document.body.append(f);
     f.submit();
   }
 </script>
 
 <?php
-print_r($taxonomys);
 $taxonomy_name = 'case_study-category'; // タクソノミーのスラッグ名を入れる
 $post_type = 'case_study'; // カスタム投稿のスラッグ名を入れる
 $args = array(
