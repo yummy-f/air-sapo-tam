@@ -35,7 +35,7 @@ Template Name: トップページ
 </div>
 <div class="service_modal-panel-back disable" id="service_modal_id">
   <div class="top_modal_panel">
-    <h1 class="top_modal_title">FEATURES</h1>
+    <h1 class="top_modal_title">FEATURES</h1><span class="square_btn"></span>
     <h2 class="top_modal_subtitle">5つのできること</h2>
     <div class="top_modal_toppage_box">
       <ul class="top_modal_toppage_box_list01">
@@ -196,11 +196,11 @@ Template Name: トップページ
     $('#service_modal_id').addClass('disable');
   })
   // グレー背景以外のクリック無効化
-  $('.service_modal_panel').on('click', function(e) {
+  $('.top_modal_panel').on('click', function(e) {
     e.stopPropagation();
   })
   // モーダル戻るボタン
-  $('.service_modal_close').on('click', function(e) {
+  $('.square_btn').on('click', function(e) {
     $('#service_modal_id').addClass('disable');
   })
 </script>
