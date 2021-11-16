@@ -44,20 +44,20 @@ Template Name: 事業内容
         <img src="<?php echo get_template_directory_uri(); ?>/image/service01.png" alt="">
         <h4>サブリースプラン</h4>
         <p>オーナー様から弊社が物件を一括<br>で借り上げ、毎月決まった賃料を<br>オーナー様に送金いたします。</p>
-        <a class="service_modal_open" href="#">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
+        <a class="service_modal_open" href="#" data-slide="0">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
       </div>
       <div class="service_plan_flex_box01">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service02.png" alt="">
         <h4>マスターリースプラン</h4>
         <p>オーナー様から弊社が物件を一括<br>で借り上げ、毎月入居率に応じた<br>賃料を送金いたします。</p>
-        <a class="service_modal_open" href="#">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
+        <a class="service_modal_open" href="#" data-slide="1">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
       </div>
 
       <div class="service_plan_flex_box01">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service03.png" alt="">
         <h4>レベニューシェアプラン</h4>
         <p>約定賃料を上回る成約の場合<br>上振れ分を折半</p>
-        <a class="service_modal_open" href="#">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
+        <a class="service_modal_open" href="#" data-slide="2">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
       </div>
     </div>
 
@@ -66,14 +66,14 @@ Template Name: 事業内容
         <img src="<?php echo get_template_directory_uri(); ?>/image/service04.png" alt="">
         <h4>集金代行プラン</h4>
         <p>オーナー様から弊社が管理を一括で請け負い。</p>
-        <a class="service_modal_open" href="#">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
+        <a class="service_modal_open" href="#" data-slide="3">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
       </div>
 
       <div class="service_plan_flex_box02">
         <img src="<?php echo get_template_directory_uri(); ?>/image/service05.png" alt="">
         <h4>募集媒介プラン</h4>
         <p>オーナー様から弊社が募集業務を<br>専任で請け負います。更新時の手続き代行や退去立ち合い業務もスポットで請負可能です。</p>
-        <a class="service_modal_open" href="#">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
+        <a class="service_modal_open" href="#" data-slide="4">READ MORE<i class="fas fa-chevron-right fa-fw"></i></a>
       </div>
     </div>
   </div>
@@ -225,6 +225,9 @@ Template Name: 事業内容
 <!------------------------------- jquery -------------------------------------->
 
 <script>
+  // スライダー用
+  var slideNum = 0;
+
   // スライダー
   var slider = $('.service_modal_slider').slick({
     autoplay: false,
@@ -234,6 +237,8 @@ Template Name: 事業内容
     infinite: true,
     centerMode: true,
     dots: true,
+    initialSlide: slideNum, // 初期表示スライド
+    focusOnSelect: true, // 他の画像をクリックすると中央に移動
     responsive: [{
         breakpoint: 780,
         settings: {
@@ -246,6 +251,9 @@ Template Name: 事業内容
   // モーダル
   $('.service_modal_open').on('click', function() {
     $('#service_modal_id').removeClass('disable');
+    slideNum = $(this).attr('data-slide');
+    slider.slick('slickGoTo', slideNum);
+    console.log(slideNum);
     slider.slick('setPosition');
   });
   // グレー背景で戻る
@@ -261,18 +269,6 @@ Template Name: 事業内容
     $('#service_modal_id').addClass('disable');
   })
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

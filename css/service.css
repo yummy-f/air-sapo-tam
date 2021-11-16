@@ -152,7 +152,7 @@
     width: 200px;
     max-width: 306px;
     height: 346px;
-    margin: 0 auto 49px;
+    margin: 0 0 49px;
   }
 }
 
@@ -305,6 +305,7 @@
 
 .service_modal_slider_main.slick-center p {
   display: block;
+  margin-left: -250px;
 }
 
 .service_modal_slider_main img {
@@ -342,7 +343,7 @@
   .service_plan_flex02 {
     display: flex;
     justify-content: space-between;
-    width: 65.545%;
+    width: 54%;
     max-width: 643px;
   }
 }
@@ -371,7 +372,7 @@
     width: 200px;
     max-width: 306px;
     height: 346px;
-    margin: 0 auto 49px;
+    margin: 0 0 49px;
   }
 }
 
@@ -379,6 +380,11 @@
   .service_plan_flex_box02 {
     width: 47.589%;
   }
+}
+
+.service_modal_panel .slick-dots li.slick-active button:before,
+.service_modal_panel .slick-dots li button:before {
+  color: red;
 }
 
 /*------------------------------------ PM --------------------------------------*/
