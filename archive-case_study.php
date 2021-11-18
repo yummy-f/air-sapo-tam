@@ -24,8 +24,8 @@ Template Name: 管理事例
   <input id="case_all" class="case_cat_button" type="button" value="ALL" onclick="changeCategory('ALL');" />
   <input id="case_minpaku" class="case_cat_button" type="button" value="民泊" onclick="changeCategory('minpaku');" />
   <input id="case_ryokan" class="case_cat_button" type="button" value="旅館業" onclick="changeCategory('ryokan');" />
-  <input id="case_sharehouse" class="case_cat_button" type="button" value="シェアハウス" onclick="changeCategory('sharehouse');" />
-  <input id="case_rentalspace" class="case_cat_button" type="button" value="レンタルスペース" onclick="changeCategory('rentalspace');" />
+  <input id="case_sharehouse" class="case_cat_button case_40" type="button" value="シェアハウス" onclick="changeCategory('sharehouse');" />
+  <input id="case_rentalspace" class="case_cat_button case_40" type="button" value="レンタルスペース" onclick="changeCategory('rentalspace');" />
 </div>
 
 <?php

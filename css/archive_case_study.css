@@ -2,16 +2,17 @@
 
 .case_button_area {
   width: 80%;
-  margin: 60px auto 40px;
-  display: block;
+  margin: 30px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 @media (min-width:680px) {
   .case_button_area {
+    flex-wrap: nowrap;
     width: 675px;
     margin: 98px auto 73px;
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -31,25 +32,30 @@
 }
 
 .case_cat_button {
-  width: 250px;
-  height: 43px;
+  width: 30%;
+  height: 35px;
   background: #3d3d3d;
   opacity: 0.9;
   font-family: "Noto Sans CJK JP", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 0.1em;
   text-align: center;
   color: #fff;
-  margin: 0 auto 25px;
+  margin: 0 auto 15px;
   display: block;
 }
 
+.case_40 {
+  width: 42%;
+}
+
 @media (min-width:680px) {
-  .case_cat_button {
+  .case_cat_button, .case_40 {
     width: 125px;
     height: 43px;
     font-size: 13px;
+    margin: 0 auto 25px;
   }
 }
 
