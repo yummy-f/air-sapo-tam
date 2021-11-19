@@ -35,12 +35,19 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/slick.min.js"></script>
 
+    <title><?php bloginfo('title'); ?></title>
+
+    <!-- ogp -->
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta property="og:url" content="https://m.ta-japan.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?php bloginfo('title'); ?>" />
+    <meta property="og:site_name" content="<?php bloginfo('description'); ?>" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/image/ogp.png" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-
-    <title>Airsapo TAM</title>
 
     <?php wp_head(); ?>
 
