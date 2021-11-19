@@ -15,7 +15,7 @@ Template Name: TAM日記
 </div>
 
 <div class="subtitle">
-  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>TAM日記一覧</p>
+  <p><a href="<?php echo esc_url(home_url()); ?>">HOME</a><i class="fas fa-chevron-right fa-fw"></i>TAM日記一覧</p>
 </div>
 
 

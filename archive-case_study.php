@@ -15,7 +15,7 @@ Template Name: 管理事例
 </div>
 
 <div class="subtitle">
-  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>管理事例</p>
+  <p><a href="<?php echo esc_url(home_url()); ?>">HOME</a><i class="fas fa-chevron-right fa-fw"></i>管理事例</p>
 </div>
 
 
