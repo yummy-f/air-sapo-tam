@@ -1,9 +1,9 @@
 <!-------------------------------- フッター ----------------------------------->
 <footer>
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="top_back_arrow"><img src="<?php echo get_template_directory_uri(); ?>/image/up_arrow.png" alt=""></a>
+  <a href="#top" class="top_back_arrow"><img src="<?php echo get_template_directory_uri(); ?>/image/up_arrow.png" alt=""></a>
   <div class="footer_link">
     <div>
-      <a href="/"><img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="footer_logo" src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a>
     </div>
     <nav class="footer_menu1">
       <?php wp_nav_menu(array('theme_location' => 'footer1-navigation')); ?>

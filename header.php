@@ -55,7 +55,7 @@
 
 <body>
     <!------------------------------- ヘッダー -------------------------------------->
-    <header>
+    <header id="top">
         <div class="head">
             <div class="header_logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/image/logo_red.png" alt=""></a></div>
             <div class="hamburger">
