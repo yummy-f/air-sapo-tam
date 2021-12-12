@@ -351,6 +351,7 @@ nav.globalMenuSp.active {
 .top_white_universe_mobile {
   animation: anime1_mobile 2s ease 0s;
   animation-fill-mode: forwards;
+  animation-iteration-count:3;
   width: 89%;
 }
 
@@ -433,6 +434,7 @@ nav.globalMenuSp.active {
   height: 104.9px;
   animation: anime1 2s ease 0s normal;
   animation-fill-mode: forwards;
+  animation-iteration-count:3;
   transform-origin: center;
   box-shadow: 0px 10px 20px #0000001A;
 }

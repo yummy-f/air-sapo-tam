@@ -7,7 +7,17 @@
 </div>
 
 <div class="subtitle">
-  <p><a href=”<?php echo esc_url(home_url()); ?>>HOME</a><i class="fas fa-chevron-right fa-fw"></i>TAM日記</p>
+  <p>
+    <a href="<?php echo esc_url(home_url()); ?>">HOME</a>
+    <i class="fas fa-chevron-right fa-fw"></i>
+    <a href="<?php echo esc_url(home_url('/tam_diary/')); ?>">TAM日記</a>
+    <i class="fas fa-chevron-right fa-fw"></i>
+    <?php if (have_posts()) : ?>
+      <?php while (have_posts()) : the_post(); ?>
+        TAM日記<?php the_title(); ?>
+      <?php endwhile; ?>
+    <?php endif; ?>
+  </p>
 </div>
 
 <!-------------------------------- blog記事 ----------------------------------->
@@ -26,7 +36,9 @@
       <?php the_post_thumbnail("", array()); ?>
     <?php endif; ?>
   </div>
-  <div class="blog_text"><p><?php the_content(); ?></p></div>
+  <div class="blog_text">
+    <p><?php the_content(); ?></p>
+  </div>
 <?php endwhile; ?>
 <?php else : ?>
   <!-- 投稿データが取得できない場合の処理 -->
